@@ -1,32 +1,24 @@
 <div align="center">
 
-<br />
+<br/>
 
-```
-██╗     ██╗   ██╗███╗   ███╗███████╗███╗   ██╗
-██║     ██║   ██║████╗ ████║██╔════╝████╗  ██║
-██║     ██║   ██║██╔████╔██║█████╗  ██╔██╗ ██║
-██║     ██║   ██║██║╚██╔╝██║██╔══╝  ██║╚██╗██║
-███████╗╚██████╔╝██║ ╚═╝ ██║███████╗██║ ╚████║
-╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝
-```
-
-**Professional Docker Infrastructure Monitor · Native iOS**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A84FF,100:30D158&height=200&section=header&text=LUMEN&fontSize=80&fontColor=ffffff&fontAlignY=38&desc=Docker%20Infrastructure%20Monitor%20for%20iOS&descAlignY=60&descSize=18&descColor=ffffff" width="100%"/>
 
 <br/>
 
 [![Swift](https://img.shields.io/badge/Swift-5.9-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
 [![iOS](https://img.shields.io/badge/iOS-17.0+-000000?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com)
-[![SwiftUI](https://img.shields.io/badge/SwiftUI-5.0-0071e3?style=for-the-badge&logo=swift&logoColor=white)](https://developer.apple.com/swiftui/)
+[![SwiftUI](https://img.shields.io/badge/SwiftUI-5-0071e3?style=for-the-badge&logo=swift&logoColor=white)](https://developer.apple.com/swiftui/)
 [![Firebase](https://img.shields.io/badge/Firebase-Auth-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
-[![WebSocket](https://img.shields.io/badge/WebSocket-Live_Streams-00C853?style=for-the-badge&logo=socket.io&logoColor=white)]()
-[![Docker](https://img.shields.io/badge/Docker-API-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
-[![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)]()
+[![WebSocket](https://img.shields.io/badge/WebSocket-Real--time-00C853?style=for-the-badge&logo=socketdotio&logoColor=white)]()
+[![Docker](https://img.shields.io/badge/Docker-Monitor-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
+[![License](https://img.shields.io/badge/License-MIT-a855f7?style=for-the-badge)]()
 
 <br/>
 
-> 🌟 **Lumen** — Cibinizdən bütün Docker infrastrukturunuzu real-time idarə edin.  
-> WebSocket streams · Interactive charts · Hysteresis health scoring · Zero-compromise UX.
+### Cibinizdən bütün Docker infrastrukturunuzu real-time idarə edin.
+
+*Native iOS · WebSocket Streams · Hysteresis Health Scoring · Zero-Compromise UX*
 
 <br/>
 
@@ -34,589 +26,344 @@
 
 ---
 
-## 📋 Mündəricat
+<br/>
 
-| | |
-|---|---|
-| [✨ Layihə haqqında](#-layihə-haqqında) | [🏗️ Arxitektura](#️-arxitektura) |
-| [📱 Ekranlar & Funksiyalar](#-ekranlar--funksiyalar) | [⚡ Dashboard & Health Score](#-dashboard--health-score) |
-| [🐳 Container Sistemi](#-container-sistemi) | [🚨 Alert Sistemi](#-alert-sistemi) |
-| [📜 Live Logs](#-live-logs) | [⚙️ Settings](#️-settings) |
-| [🔌 Network Layer](#-network-layer) | [🧪 Mock Backend](#-mock-backend) |
-| [🎨 Design System](#-design-system) | [📁 Layihə Strukturu](#-layihə-strukturu) |
-| [🚀 Quraşdırma](#-quraşdırma) | [🛠️ Tech Stack](#️-tech-stack) |
+## 🌟 Lumen nədir?
 
----
+**Lumen** — DevOps mühəndisləri, SRE-lər və sistem administratorları üçün sıfırdan yazılmış professional Docker monitoring tətbiqidir.
 
-## ✨ Layihə haqqında
+Tətbiq real Docker backend-inə birbaşa qoşulur. Hər konteyner üçün ayrı WebSocket axını açır, CPU/Memory/Network metriklərini saniyəlik izləyir, ağıllı sağlamlıq skorlaması hesablayır, kritik hallarda dərhal xəbərdarlıq göndərir — hamısı tamamilə natif SwiftUI ilə.
 
-**Lumen** — iOS üçün sıfırdan yazılmış professional Docker monitoring tətbiqidir. DevOps mühəndisləri, SRE-lər və sistem administratorları üçün nəzərdə tutulub.
+<br/>
 
-Tətbiq real backend-ə WebSocket vasitəsilə qoşulur, hər konteyner üçün ayrı-ayrı stats axını yaradır, ağıllı sağlamlıq skorlaması aparır və kritik hallarda ani xəbərdarlıq göndərir — hamısı natif SwiftUI ilə.
+## ✨ Əsas Xüsusiyyətlər
 
-```
-👩‍💻  Developer    :  Sabina Karimli
-📅  Başlama tarixi:  Fevral 2026
-🏙️  Yer           :  Bakı, Azərbaycan 🇦🇿
-📦  Xcode project :  Final Project
-🎯  Target        :  iPhone (iOS 17.0+)
-🔐  Auth          :  Firebase Authentication
-📡  Real-time     :  URLSessionWebSocketTask (per-container streams)
-🧪  Mock mode     :  DEBUG build — şəbəkəsiz tam simulasiya
-```
+<table>
+<tr>
+<td width="50%">
+
+### 🖥️ Dashboard
+Real-time infrastruktur lövhəsi. Animasiyalı Health Score Ring, interaktiv multi-line chartlar, top CPU/Memory istifadəçiləri və son xəbərdarlıqlar — hamısı bir ekranda.
+
+</td>
+<td width="50%">
+
+### 🐳 Containers
+18+ konteyner üçün canlı metric kartlar. Hər kartda real-time CPU%, Memory%, Network TX/RX. Detail görünüşündə environment variables, port mapping, mounted volumes.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🚨 Alerts
+Severity-based xəbərdarlıq sistemi. Critical (≥20% CPU), High (≥12%), Medium. Axtarış, filter, auto-refresh. Glassmorphism ProAlertRow komponentlər.
+
+</td>
+<td width="50%">
+
+### 📜 Live Logs
+Terminal-style real-time log streaming. Konteyner seçici, log level filter, auto-scroll, 1500 sətir limit, nanosecond precision timestamp parsing.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ⚙️ Settings
+CPU threshold slider (1–99%), server URL konfiqurasiyası, notification toggle, Firebase email verification, sign out.
+
+</td>
+<td width="50%">
+
+### 🧪 Mock Mode
+Şəbəkəsiz tam simulasiya. Sin-wave + spike engine, 18 konteyner profili, real backend formatına uyğun data — DEBUG build-da avtomatik aktiv.
+
+</td>
+</tr>
+</table>
+
+<br/>
 
 ---
 
 ## 🏗️ Arxitektura
 
-Lumen **MVVM + Coordinator** pattern üzərindədir. UIKit navigation layer üstündə SwiftUI view-lar embed edilib.
+Lumen **MVVM + Coordinator** pattern üzərindədir. UIKit navigation qatı, üzərindəki SwiftUI view-ları UIHostingController vasitəsilə embed edir.
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                         UIKit Navigation                            │
-│   MainTabBarController                                              │
-│   ├── DashboardViewController    → embeds DashboardView            │
-│   ├── ContainersViewController   → embeds ContainersTabView        │
-│   ├── AlertViewController        → embeds AlertsView               │
-│   ├── LogsViewController         → embeds LogsView                 │
-│   └── SettingsViewController     → embeds SettingsView             │
-└─────────────────────────┬───────────────────────────────────────────┘
-                          │  UIHostingController
-┌─────────────────────────▼───────────────────────────────────────────┐
-│                        SwiftUI Views                                │
-│                                                                     │
-│  DashboardView ──── DashboardViewModel (@MainActor, @StateObject)  │
-│       │                    │                                        │
-│       │             DashboardCoordinator                            │
-│       │             ├── snapshotTimer  (4s)                         │
-│       │             ├── alertTimer     (20s)                        │
-│       │             ├── containerTimer (15s)                        │
-│       │             └── streamTasks    (per-container WS)           │
-│       │                                                             │
-│  ContainersTabView ─ ContainersTabViewModel                        │
-│       └── ContainersView ── ContainersViewModel                    │
-│                 └── [ContainerCard] × N  ← live metric strips      │
-│                       └── ContainerDetailView                      │
-│                             └── StatsStreamViewModel               │
-│                                                                     │
-│  AlertsView ──── AlertViewModel                                     │
-│  LogsView   ──── LogsViewModel + LogsStreamLogic                   │
-│  SettingsView ── SettingsViewModel                                  │
-└─────────────────────────┬───────────────────────────────────────────┘
-                          │
-┌─────────────────────────▼───────────────────────────────────────────┐
-│                       Network Layer                                 │
-│                                                                     │
-│   LumenService (protocol)                                           │
-│   ├── RealLumenService   → REST API (GET/POST/DELETE)               │
-│   └── MockLumenService   → Simulated responses                      │
-│                                                                     │
-│   StatsStreaming (protocol)                                         │
-│   ├── RealStatsHub       → ws://host/stats?containerId={id}         │
-│   └── MockStatsHub       → Sin-wave + spike simulation engine       │
-│                                                                     │
-│   WebSocket Stack                                                   │
-│   ├── DefaultWebSocketClient  (URLSessionWebSocketTask wrapper)     │
-│   ├── WebSocketBackoff        (exponential retry)                   │
-│   ├── StatsCache              (CachedStatsEnvelope)                 │
-│   └── DateParser              (nanosecond timestamp support)        │
-└─────────────────────────────────────────────────────────────────────┘
+UIKit Navigation Layer
+└── MainTabBarController
+    ├── Dashboard ──── DashboardViewModel  ←→  DashboardCoordinator
+    ├── Containers ─── ContainersViewModel ←→  WebSocket Streams × N
+    ├── Alerts ──────── AlertViewModel      ←→  REST API (4s refresh)
+    ├── Logs ────────── LogsViewModel       ←→  WebSocket Log Stream
+    └── Settings ────── SettingsViewModel   ←→  UserDefaults + Firebase
+                              │
+              ┌───────────────┴───────────────┐
+              │         Service Layer          │
+              │  LumenService    (protocol)    │
+              │  ├── RealLumenService  (REST)  │
+              │  └── MockLumenService  (mock)  │
+              │                               │
+              │  StatsStreaming   (protocol)   │
+              │  ├── RealStatsHub  (WebSocket) │
+              │  └── MockStatsHub  (sin-wave)  │
+              └───────────────────────────────┘
 ```
 
-### 🔄 Stats Data Flow
-
-```
-WebSocket  →  ContainerStats  →  normalizeToPercent()  →  clamp(0–100)
-                                         │
-                    ┌────────────────────┼────────────────────┐
-                    │                    │                    │
-              ContainerCard       ContainerStatsHistory   HealthScore
-              (live UI strip)     (40-point chart buffer)  Calculator
-                    │                    │                    │
-               CPU% / MEM%        DashboardChartBuilder   target score
-               Network TX/RX      multi-line charts        α=0.3 smooth
-```
-
-### 🧩 Key Architectural Decisions
-
-| Pattern | Harada | Niyə |
-|---------|--------|------|
-| `@MainActor` | Bütün ViewModels | Thread-safe UI update-ları |
-| `AsyncThrowingStream` | Stats streaming | Structured Swift concurrency |
-| `didLoadOnce` flag | AlertVM, DetailVM | Double network request önlənir |
-| `didStartOnce` flag | DashboardVM | Tab-switch-də double-start yoxdur |
-| Hysteresis thresholds | HealthScoreCalculator | Score titrəməsi (flutter) aradan qalxır |
-| Exponential smoothing α=0.3 | DashboardVM | Hamar health score animasiyası |
-| Protocol-based services | LumenService, StatsStreaming | Mock ↔ Real asan keçid |
-| Coordinator pattern | DashboardCoordinator | Timer + stream lifecycle idarəsi |
-| `nonisolated deinit` | DashboardCoordinator | Task cancel deinit-dən təhlükəsiz |
-| Stream persistence | ContainersViewModel | Navigation push/pop-da streams canlı qalır |
-
----
-
-## 📱 Ekranlar & Funksiyalar
-
-### 🖥️ Dashboard Tab
-Real-time Docker infrastruktur lövhəsi — 5 vizual bölmə:
-
-- **🏥 Health Score Ring** — 0–100 arası animasiyalı sağlamlıq göstəricisi (hysteresis + smoothing)
-- **📊 Stats Grid** — Ümumi CPU%, Memory MB, Running count, Critical count
-- **📈 Interactive Charts** — CPU Contribution / CPU Trend / Memory Trend (3 tab)
-- **🔝 Top Contributors** — Ən çox CPU/RAM istifadə edən konteynerlar
-- **🚨 Recent Alerts** — Son 5 kritik xəbərdarlıq
-
-### 🐳 Containers Tab
-Per-container real-time metric kartları:
-
-- **Live metric strip** — hər kartda CPU% + MEM% progress bar + Network TX/RX
-- **Filter chips** — All / Running / Stopped
-- **Search** — konteyner adına görə axtarış
-- **Pull-to-refresh** — sürüşdürərək yeniləmə
-- **Tabs** — Containers / Images / Volumes / Networks
-- **Detail view** — Environment variables, Ports, Mounts, Live stats, Actions
-
-### 🚨 Alerts Tab
-Xəbərdarlıq mərkəzi:
-
-- **Severity filter** — All / Critical / High / Medium
-- **Search** — konteyner adına görə axtarış
-- **Auto-refresh** — hər 4 saniyədə bir
-- **Clear history** — bütün xəbərdarlıqları silmə
-
-### 📜 Logs Tab
-Terminal-style real-time log axını:
-
-- **Container picker** — hansı konteynerin logunu izləmək seçimi
-- **Log level filter** — INFO / WARN / ERROR / DEBUG
-- **Live streaming** — WebSocket vasitəsilə real-time output
-- **Auto-scroll** — yeni loglar gəldikdə aşağı sürüşmə
-- **Line count pill** — cari log sayı göstəricisi
-
-### ⚙️ Settings Tab
-İstifadəçi tərəfindən fərdiləşdirilə bilər:
-
-- **Server connection** — host URL konfiqurasiyası + connection test
-- **CPU threshold slider** — 1–99% arası xəbərdarlıq hədd dəyəri
-- **Notification toggle** — bildirişləri açıb/bağlamaq
-- **Email verification** — Firebase istifadəçi məlumatları
-- **Sign out** — hesabdan çıxış
+<br/>
 
 ---
 
 ## ⚡ Dashboard & Health Score
 
-### Health Score Mexanizmi
+Health Score sistemi — Lumen-in ən mürəkkəb komponentidir. Üç texnika birlikdə işləyir:
 
-Health score sistemi üç əsas texnikadan istifadə edir:
+<br/>
 
-**1. Penalty-based scoring**
-```swift
-score = 100
-score -= cpuPenalty     // max CPU-ya görə (hysteresis ilə)
-score -= memPenalty     // ortalama memory-yə görə
-score -= alertPenalty   // aktiv kritik alertlərə görə
-score -= stoppedPenalty // dayanmış konteynerlərə görə
-```
+### 🏥 Penalty-Based Scoring
 
-**2. Hysteresis thresholds** — titrəmə (score flutter) aradan qalxır:
-```
-CPU Critical: enter ≥ 20%  → exit < 15%
-CPU High:     enter ≥ 12%  → exit <  8%
-MEM Critical: enter ≥ 80%  → exit < 70%
-MEM High:     enter ≥ 60%  → exit < 50%
-```
+Hər 2 saniyədə bir bütün konteynerlərin məlumatları toplanır, aşağıdakı penaltilərlə 100-dən çıxılır:
 
-**3. Exponential smoothing** — ani sıçrayış olmadan hamar keçid:
-```swift
-// α = 0.3  →  yeni dəyər 30%, köhnə dəyər 70% təsir edir
-smoothedScore = Int(Double(target) * 0.3 + Double(current) * 0.7)
-```
+| Vəziyyət | Penalti | Maks |
+|----------|---------|------|
+| 🔴 CPU ≥ 20% (critical) | −15 base, hər 5% üçün −1 extra | −40 |
+| 🟠 CPU ≥ 12% (high) | −10 base, hər 6% üçün −1 extra | −20 |
+| 🟡 CPU orta > 5% | −5 | — |
+| 🔴 Memory ≥ 80% | −10 (mütənasib) | −20 |
+| 🟠 Memory ≥ 60% | −5 (mütənasib) | −12 |
+| 🚨 Hər kritik alert | −5 | −20 |
+| ⛔ Hər dayanmış kont. | −3 | −12 |
 
-### Penalty Cədvəli
+<br/>
 
-| Vəziyyət | Base Penalti | Extra | Maks |
-|----------|-------------|-------|------|
-| CPU ≥ 20% (critical) | −15 | hər +5% üçün −1 | −40 |
-| CPU ≥ 12% (high) | −10 | hər +6% üçün −1 | −20 |
-| CPU avg > 5% | −5 | — | — |
-| Memory ≥ 80% | −10 (prop.) | — | −20 |
-| Memory ≥ 60% | −5 (prop.) | — | −12 |
-| Hər kritik alert | −5 | — | −20 |
-| Hər dayanmış kont. | −3 | — | −12 |
+### 🔀 Hysteresis Thresholds
 
-### Health Status
+Score titrəməsinin (flutter) qarşısını alır. Enter və exit threshold-ları fərqlidir:
 
-```
-Score ≥ 70  →  🟢  Healthy
-Score ≥ 40  →  🟡  Warning
-Score  < 40  →  🔴  Critical
-```
+| | Enter (kritik başlayır) | Exit (normal qayıdır) |
+|-|------------------------|----------------------|
+| CPU Critical | ≥ 20% | < 15% |
+| CPU High | ≥ 12% | < 8% |
+| Memory Critical | ≥ 80% | < 70% |
+| Memory High | ≥ 60% | < 50% |
 
-### Dashboard Timer Orkestrası
+<br/>
 
-```
-DashboardCoordinator
-├── snapshotTimer   : hər  4s → globalHistory-ə nöqtə əlavə edir
-├── alertTimer      : hər 20s → recentAlerts sinxronlaşdırılır
-├── containerTimer  : hər 15s → yeni konteynerləri kəşf edir
-└── (DashboardViewModel)
-    └── recalcTimer : hər  2s → aggregates + health score yenilənir
-```
+### 📈 Exponential Smoothing (α = 0.3)
 
-### Chart Sistemi
+Ani sıçrayışlar olmadan hamar keçid üçün. Yeni hədəf score 30%, cari score isə 70% çəki daşıyır.
 
-```
-ChartTab.cpuContribution  →  Hər konteynerin CPU töhfəsi
-ChartTab.cpuTrend         →  Zaman üzrə ümumi CPU trendi (multi-line)
-ChartTab.memoryTrend      →  Zaman üzrə ümumi Memory trendi (multi-line)
+<br/>
 
-ContainerStatsHistory: 40 nöqtəlik rolling buffer (hər 2.5s bir snapshot)
-GlobalStatPoint:       timestamp + totalCPU + totalMemoryMB
-```
+### 🎨 Health Status
+
+| Score | Status | Rəng |
+|-------|--------|------|
+| ≥ 70 | Healthy | 🟢 Yaşıl |
+| ≥ 40 | Warning | 🟡 Sarı |
+| < 40 | Critical | 🔴 Qırmızı |
+
+<br/>
+
+### ⏱️ Dashboard Timer Orkestrası
+
+| Timer | Interval | Vəzifə |
+|-------|----------|--------|
+| snapshotTimer | 4 saniyə | Chart history-ə nöqtə əlavə edir |
+| alertTimer | 20 saniyə | Son alertləri sinxronlaşdırır |
+| containerTimer | 15 saniyə | Yeni konteynerləri kəşf edir |
+| recalcTimer | 2 saniyə | Aggregates + health score yenilənir |
+
+<br/>
 
 ---
 
-## 🐳 Container Sistemi
+## 🐳 Container Streaming Sistemi
 
-### Stream Lifecycle — Əsas Dizayn Qərarı
+### Stream Lifecycle
 
-```
-ContainersViewModel
-│
-├── onAppear()
-│   └── Yalnız loadTask yenilənir
-│       Stream tasks TOXUNULMUR ✅
-│       → Detail-dən geri gəldikdə kartlar dərhal CPU göstərir
-│
-├── onDisappear()
-│   └── Yalnız loadTask cancel edilir
-│       Stream tasks CANLIQALIR ✅
-│       → Navigation push/pop-da stats itirilmir
-│
-├── refresh()          [pull-to-refresh + NotificationCenter]
-│   └── TAM RESET: cancelStreams() + latestStats.removeAll()
-│       → Yeni yükləmə başlayır
-│
-└── reconcileStreams()  [containerTimer hər 15s]
-    └── Yeni konteyner üçün stream başlat
-        Artıq yoxolan konteyner üçün stream dayandır
-```
+Ən vacib arxitektura qərarlarından biri — navigation-da streams canlı qalır:
+
+| Hadisə | loadTask | streamTasks | Nəticə |
+|--------|----------|-------------|--------|
+| `onAppear()` | 🔄 Yenilənir | ✅ Toxunulmur | Detail-dən geri gəldikdə kartlar dərhal CPU göstərir |
+| `onDisappear()` | ❌ Cancel | ✅ Canlı qalır | Navigation push/pop-da stats itirilmir |
+| `refresh()` | 🔄 Yenilənir | 🔄 Tam reset | Pull-to-refresh tam yükləmə edir |
+| `containerTimer` | — | 🔄 Reconcile | Yeni kont. üçün stream açır, yox olanı bağlayır |
+
+<br/>
 
 ### Container Actions
 
-```swift
-// Optimistic update — istifadəçi dərhal dəyişiklik görür
-Start   → state: "running"   (server cavabını gözləmədən)
-Stop    → state: "exited"
-Restart → state: "running"
+| Action | Optimistic Update | Protection |
+|--------|------------------|------------|
+| ▶️ Start | Dərhal "running" göstərir | — |
+| ⏹️ Stop | Dərhal "exited" göstərir | lumen-app üçün blok 🔒 |
+| 🔄 Restart | Dərhal "running" göstərir | lumen-app üçün blok 🔒 |
+| 🗑️ Remove | Confirmation dialog | lumen-app üçün blok 🔒 |
 
-// System-critical protection
-if container.name == "lumen-app" {
-    // Stop / Restart / Remove buttons → deaktiv 🔒
-}
-```
-
-### ContainerCard — Live Metric Strip
-
-```
-┌─────────────────────────────────────────────────┐
-│  🔵 lumen-app              ● running          › │
-│     lumen-mobile-app:local                       │
-│                                                  │
-│  🖥 CPU          💾 MEM         ↓233B ↑132B     │
-│  21.9% ████░░   12.0% ██░░░                     │
-└─────────────────────────────────────────────────┘
-
-cpuPct = clamp(cpuUsage, 0, 100)      // faiz format, clamp only
-memPct = clamp(memoryPercent, 0, 100) // faiz format, clamp only
-```
+<br/>
 
 ---
 
-## 🚨 Alert Sistemi
+## 🚨 Alert Severity Sistemi
 
-### Severity Thresholds
+### Threshold Dəyərləri
 
-```swift
-AlertSeverityHelper.Threshold
-├── cpuHigh   : 20.0%  →  🔴  Critical
-├── cpuMedium : 12.0%  →  🟠  High / Warning
-├── memHigh   : 80.0%  →  🔴  Critical
-└── memMedium : 60.0%  →  🟡  Medium
-```
+| Severity | CPU | Memory |
+|----------|-----|--------|
+| 🔴 Critical | ≥ 20% | ≥ 80% |
+| 🟠 High | ≥ 12% | ≥ 60% |
+| 🟡 Medium | < 12% | < 60% |
+
+<br/>
 
 ### Alert Flow
 
 ```
-Service.getAlertHistory()
-        │
-        ▼
-AlertViewModel.load()  [didLoadOnce guard — double request yoxdur]
-        │
-        ▼
-sort by timestamp (descending) → applyFilter(severity + search)
-        │
-        ▼
-AlertsView → ProAlertRow (glow + severity pill + metric chips)
+Service → getAlertHistory() → sort (newest first) → applyFilter() → UI
 ```
 
-### ProAlertRow Komponentlər
+`didLoadOnce` flag ilə tab keçidlərində təkrar network request edilmir.
 
-```
-ProAlertRowShell
-├── ProAlertRowCardBackground   (glassmorphism card)
-├── ProAlertRowGlow             (severity rənginə uyğun glow)
-├── ProAlertRowLeftBar          (rəngli sol border)
-├── ProAlertRowIcon             (konteyner tipi ikonu)
-├── ProAlertRowHeader           (konteyner adı + SeverityPill)
-├── ProAlertRowMessage          (xəbərdarlıq mətni)
-├── ProAlertRowMetricPill       (CPU% + MEM%)
-└── ProAlertRowTime             (relative timestamp)
-```
+<br/>
 
 ---
 
-## 📜 Live Logs
+## 📜 Logs Sistemi
 
-### Stream Arxitekturası
+### Əsas Xüsusiyyətlər
 
-```
-LogsView
-├── ContainerPickerView    → aktiv konteyner seçimi
-└── TerminalOutputView     → terminal-style log render
-      ├── TerminalLogLine        (satır komponenti)
-      ├── TerminalTimestamp      (nanosecond precision)
-      ├── TerminalMessageText    (rəngli log mətni)
-      └── LogFlashOverlay        (yeni log highlight animasiyası)
+| Xüsusiyyət | Dəyər |
+|-----------|-------|
+| Max log buffer | 1500 sətir |
+| Reconnect cəhdi | 6 dəfə |
+| Retry strategiyası | Exponential backoff |
+| Timestamp dəqiqliyi | Nanosecond (9 rəqəm) |
+| Re-flash | Scroll-da əvvəlki loglar yenidən yanmır |
 
-LogsViewModel
-└── LogsStreamLogic
-    ├── max 1500 log satırı     (performans limiti)
-    ├── maxAttempts: 6          (reconnect cəhdi sayı)
-    ├── userStopped flag        (istifadəçi dayandırırsa yenidən başlamır)
-    ├── pendingLogs buffer      (batch UI update)
-    └── DateParser              (nanosecond timestamp fix)
-```
+### Log Levels
 
-### Nanosecond Timestamp Fix
+| Səviyyə | Rəng | İstifadə |
+|---------|------|----------|
+| DEBUG | 🔵 Mavi | Development məlumatları |
+| INFO | ⚪ Ağ | Adi hadisələr |
+| WARN | 🟡 Sarı | Xəbərdarlıqlar |
+| ERROR | 🔴 Qırmızı | Xətalar |
 
-```swift
-// Problem: "2026-03-07T11:09:27.391118289Z" → standard parser bacarmir
-// Həll: 9 rəqəmli nanosecond-u 3 rəqəmə kəs
-"2026-03-07T11:09:27.391118289Z"
-         ↓  trim to milliseconds
-"2026-03-07T11:09:27.391Z"
-         ↓  ISO8601DateFormatter parse
-✅  Date object
-```
-
-### Log Level Sistemi
-
-```
-🔵  DEBUG   → development məlumatları
-⚪  INFO    → adi hadisələr
-🟡  WARN    → xəbərdarlıqlar
-🔴  ERROR   → xətalar
-```
-
----
-
-## ⚙️ Settings
-
-### CPU Threshold
-
-```swift
-@Published var cpuThreshold: Double {
-    didSet {
-        guard oldValue != cpuThreshold else { return }  // sonsuz döngü yoxdur
-        let clamped = min(max(cpuThreshold, 1.0), 99.0)
-        LocalThresholdStore.saveCPU(clamped)            // UserDefaults
-        AlertSeverityHelper.Threshold.current = clamped // global threshold yenilənir
-    }
-}
-```
-
-### Auto-Save
-
-```swift
-// Debounce — hər dəyişiklikdə dərhal save etmir, 800ms gözləyir
-private func scheduleAutoSave() {
-    autoSaveTask?.cancel()
-    autoSaveTask = Task {
-        try? await Task.sleep(nanoseconds: 800_000_000)
-        await performSave()
-    }
-}
-
-deinit {
-    autoSaveTask?.cancel() // memory leak yoxdur ✅
-}
-```
-
-### Server Setup
-
-```
-ServerSetupSheetView
-├── Host URL daxil etmə
-├── ConnectionStatusCapsule  → bağlantı testi nəticəsi
-├── PrettyHostFormatter      → URL-i oxunaqlı formata çevirir
-└── FlowConnectorView        → animasiyalı connection flow diagramı
-```
+<br/>
 
 ---
 
 ## 🔌 Network Layer
 
-### REST Endpoints
+### REST API
 
-```
-Base URL: http://{host}:{port}
+| Method | Endpoint | İzah |
+|--------|----------|------|
+| `GET` | `/containers` | Bütün konteynerlərin siyahısı |
+| `GET` | `/containers/:id` | Konteyner detalları (env, ports, mounts) |
+| `POST` | `/containers/:id/start` | Konteyneri başlat |
+| `POST` | `/containers/:id/stop` | Konteyneri dayandır |
+| `POST` | `/containers/:id/restart` | Konteyneri yenidən başlat |
+| `DELETE` | `/containers/:id` | Konteyneri sil |
+| `GET` | `/images` | Docker image-lar |
+| `GET` | `/volumes` | Docker volume-lar |
+| `GET` | `/networks` | Docker network-lər |
+| `GET` | `/alerts` | Xəbərdarlıq tarixi |
+| `DELETE` | `/alerts` | Bütün xəbərdarlıqları sil |
 
-GET    /containers              →  [ContainerInfo]
-GET    /containers/:id          →  ContainerInfo (env, ports, mounts)
-POST   /containers/:id/start    →  200 OK
-POST   /containers/:id/stop     →  200 OK
-POST   /containers/:id/restart  →  200 OK
-DELETE /containers/:id          →  200 OK
+<br/>
 
-GET    /images                  →  [DockerImage]
-GET    /volumes                 →  [DockerVolume]
-GET    /networks                →  [DockerNetwork]
+### WebSocket Stats
 
-GET    /alerts                  →  [Alert]
-DELETE /alerts                  →  200 OK (clear all)
-```
+**Endpoint:** `ws://{host}/stats?containerId={id}`
 
-### WebSocket Stats Format
+| Sahə | Tip | İzah |
+|------|-----|------|
+| `cpuUsage` | Double | CPU faizi — **0.0–100.0** (22.58 = 22.58%) |
+| `memoryUsage` | Int | Bytes |
+| `memoryLimit` | Int | Bytes (≈ 3917 MB default) |
+| `memoryPercent` | Double | Memory faizi |
+| `networkRx` | Int | Alınan bytes |
+| `networkTx` | Int | Göndərilən bytes |
 
-```
-Endpoint: ws://{host}:{port}/stats?containerId={id}
+> ⚠️ **Mühüm:** `cpuUsage` faiz formatındadır. `22.58` = 22.58% CPU, `0.2258` fraction deyil. `normalizeToPercent()` yalnız `clamp(0, 100)` edir.
 
-// Hər ~1 saniyədə gələn payload:
-{
-  "containerId":    "e517a71cfa3b...",
-  "cpuUsage":       22.58,        // ← FAIZ (0.0–100.0), fraction DEYİL
-  "memoryUsage":    204800000,    // bytes
-  "memoryLimit":    4106219520,   // bytes (≈ 3917 MB)
-  "memoryPercent":  4.98,         // faiz
-  "networkRx":      45231,        // bytes received
-  "networkTx":      12048         // bytes transmitted
-}
-```
+<br/>
 
 ### WebSocket Stack
 
-```
-WebSocketClient (protocol)
-└── DefaultWebSocketClient
-    ├── connect()      → URLSessionWebSocketTask.resume()
-    ├── receive()      → AsyncStream<String>
-    ├── disconnect()   → task.cancel()
-    └── WebSocketBackoff → exponential retry (1s→2s→4s→8s→max 30s)
+| Komponent | Vəzifə |
+|-----------|--------|
+| `DefaultWebSocketClient` | `URLSessionWebSocketTask` wrapper |
+| `WebSocketBackoff` | Exponential retry: 1s → 2s → 4s → 8s → max 30s |
+| `StatsCache` | Son gələn stats cache-lənir |
+| `DateParser` | Nanosecond timestamp parsing |
+| `StatsStreamViewModel` | 350ms başlama gecikmə (detail view animation) |
 
-StatsStreamViewModel
-├── 350ms başlama gecikmə   → detail view açıldıqda animation tamamlanır
-├── CachedStatsEnvelope     → son gələn stats cache-lənir
-└── StatsCache              → shared cache (multi-view sync)
-```
-
-### ⚠️ CPU Format — Mühüm Qeyd
-
-```
-Real backend HƏMİŞƏ faiz göndərir:
-  22.58  →  22.58% CPU  ✅
-   1.45  →   1.45% CPU  ✅ (bu fraction DEYİL!)
-
-normalizeToPercent() = sadəcə clamp(0, 100)
-Heç bir ×100 çevrilməsi yoxdur
-```
+<br/>
 
 ---
 
 ## 🧪 Mock Backend
 
-`DEBUG` build-da şəbəkəsiz tam simulasiya mühiti:
-
-### MockStatsHub — Sin-Wave + Spike Engine
-
-```swift
-struct Profile {
-    let baseCPU:       Double  // normal CPU faizi (0–100)
-    let cpuAmplitude:  Double  // dalğa amplitudu
-    let spikeChance:   Double  // hər saniyə spike ehtimalı
-    let spikeMult:     Double  // spike = baseCPU × spikeMult
-    let baseMem:       Double  // normal memory MB
-    let memAmplitude:  Double
-}
-
-// CPU formulası:
-rawCPU = baseCPU + amplitude × sin(phase) + noise
-       + (spikeActive ? spikeMult × baseCPU : 0)
-finalCPU = clamp(rawCPU, 0.1, 99.9)
-```
+`DEBUG` build-da şəbəkəsiz tam simulasiya. Sin-wave + spike engine ilə realistik data.
 
 ### Konteyner Profillər
 
-| Konteyner | Normal CPU | Spike CPU | Spike ehtimalı | Severity |
+| Konteyner | Normal CPU | Spike CPU | Spike ehtimalı | Vəziyyət |
 |-----------|-----------|-----------|----------------|----------|
 | `log-cpu-heavy` | 18–26% | — | 0% | 🔴 Həmişə Critical |
-| `lumen-app` | ~3% | ~21% | 5%/s | 🔴 Spike-da Critical |
-| `lumen-postgres` | ~5.5% | ~13.8% | 5%/s | 🟠 Spike-da High |
-| `log-mongodb` | ~2.2% | ~13.2% | 6%/s | 🟠 Spike-da High |
-| `log-analytics` | ~2.5% | ~12.5% | 6%/s | 🟠 Spike-da High |
-| `log-search-service` | ~2% | ~13% | 6%/s | 🟠 Spike-da High |
+| `lumen-app` | ~3% | ~21% | 5%/saniyə | 🔴 Spike-da Critical |
+| `lumen-postgres` | ~5.5% | ~14% | 5%/saniyə | 🟠 Spike-da High |
+| `log-mongodb` | ~2.2% | ~13% | 6%/saniyə | 🟠 Spike-da High |
+| `log-analytics` | ~2.5% | ~13% | 6%/saniyə | 🟠 Spike-da High |
+| `log-search-service` | ~2% | ~13% | 6%/saniyə | 🟠 Spike-da High |
 | `lumen-minio` | ~5% | — | 0% | 🟢 Normal |
 | Digər 11 kont. | 1.6–3% | — | 0% | 🟢 Normal |
 
-### Environment Switch
-
-```swift
-// AppEnvironment.swift
-#if DEBUG
-static func makeLumenService()   -> LumenService   { MockLumenService() }
-static func makeStatsStreaming() -> StatsStreaming  { MockStatsHub.shared }
-#else
-static func makeLumenService()   -> LumenService   { RealLumenService() }
-static func makeStatsStreaming() -> StatsStreaming  { RealStatsHub.shared }
-#endif
-```
+<br/>
 
 ---
 
 ## 🎨 Design System
 
-Lumen özünəməxsus `DS` namespace istifadə edir — bütün magic number-lar mərkəzləşdirilmiş:
+Bütün vizual sabitlər `DS` namespace altında mərkəzləşdirilmişdir.
 
-```swift
-// Rənglər
-DS.Color.accent / danger / warning / success
-DS.Color.bg0 … bg4          // katmanlaşmış fon ierarxiyası
-DS.Color.textPrimary / Secondary / Tertiary / Muted
+<table>
+<tr>
+<td width="50%">
 
-// Tipografiya
-DS.Font.headline(_ size:)   // SFRounded Bold
-DS.Font.mono(_ size:)       // monospaced — log output
-DS.Font.label(_ size:)      // tracked caps
-DS.Font.caption(_ size:)
+**Rənglər**
+- `DS.Color.accent` — əsas mavi
+- `DS.Color.danger` — kritik qırmızı
+- `DS.Color.warning` — amber
+- `DS.Color.success` — yaşıl
+- `DS.Color.bg0–bg4` — fon ierarxiyası
+- `DS.Color.textPrimary/Secondary/Tertiary/Muted`
 
-// Spacing & Radius
-DS.Space.xs / sm / md / lg / xl / xxl    // 4–32 pt
-DS.Radius.xs / sm / md / lg             // 6–20 pt
+</td>
+<td width="50%">
 
-// Animation
-DS.Anim.fast    // .easeOut(0.15s)
-DS.Anim.smooth  // .easeInOut(0.35s)
-DS.Anim.spring  // spring(response:0.4, dampingFraction:0.75)
-```
+**Animasiya & Layout**
+- `DS.Anim.fast` — 0.15s easeOut
+- `DS.Anim.smooth` — 0.35s easeInOut
+- `DS.Anim.spring` — response 0.4, damping 0.75
+- `DS.Space.xs/sm/md/lg/xl/xxl` — 4–32pt
+- `DS.Radius.xs/sm/md/lg` — 6–20pt
 
-### Reusable Components
+</td>
+</tr>
+</table>
 
-```
-GlassCard / NeonBadge / ProStatCard / ProCountCard
-MiniSparkline / HealthScoreRing / LumenProgressBar
-SkeletonRect / PulseDot / BlinkingCursor
-SummaryBanner / SummaryChip / StatusPill
-```
+### Reusable Komponentlər
+
+`GlassCard` · `NeonBadge` · `ProStatCard` · `ProCountCard` · `MiniSparkline` · `HealthScoreRing` · `LumenProgressBar` · `SkeletonRect` · `PulseDot` · `BlinkingCursor` · `SummaryBanner` · `StatusPill`
+
+<br/>
 
 ---
 
@@ -626,134 +373,59 @@ SummaryBanner / SummaryChip / StatusPill
 Final Project/
 │
 ├── 📂 Screens/
-│   ├── 📂 Dashboard/                   (40+ fayl)
-│   │   ├── 📂 Core/
-│   │   │   ├── DashboardViewModel      ← @MainActor, health score
-│   │   │   ├── DashboardCoordinator    ← timer + stream orkestrası
-│   │   │   ├── DashboardConstants      ← centralized constants
-│   │   │   ├── DashboardAggregates     ← computeTotals, normalizeToPercent
-│   │   │   └── DashboardChartBuilder
-│   │   ├── 📂 Views/
-│   │   │   ├── DashboardView
-│   │   │   ├── DashMainContentView
-│   │   │   ├── DashLoadingView
-│   │   │   └── DashAmbientBackgroundView
-│   │   ├── 📂 Cards/
-│   │   │   ├── DashHealthCardView      ← HealthScoreRing + status
-│   │   │   ├── DashStatsGridView       ← 4 ProStatCard
-│   │   │   ├── DashAlertsSectionView   ← son 5 alert
-│   │   │   └── DashTopContributorsView
-│   │   ├── 📂 Chart/
-│   │   │   ├── DashMultiLineChart      ← interactive multi-series
-│   │   │   ├── DashInteractiveChartCanvas
-│   │   │   ├── DashTrendChart
-│   │   │   ├── DashChartTabSelector
-│   │   │   ├── MultiTooltipOverlay
-│   │   │   └── SeriesLayer
-│   │   ├── 📂 Health/
-│   │   │   ├── HealthScoreCalculator   ← hysteresis + penalty
-│   │   │   ├── HealthScoreRing         ← animasiyalı halqa
-│   │   │   └── HealthStatus
-│   │   └── 📂 Models/
-│   │       ├── ContainerStatsHistory   ← 40-point rolling buffer
-│   │       ├── GlobalStatPoint
-│   │       ├── ChartMetrics
-│   │       └── TopContributorItem
+│   ├── 📂 Dashboard/          (40+ fayl)
+│   │   ├── Core/              DashboardViewModel · DashboardCoordinator
+│   │   │                      DashboardConstants · DashboardAggregates
+│   │   ├── Views/             DashboardView · DashMainContentView
+│   │   ├── Cards/             DashHealthCardView · DashStatsGridView
+│   │   │                      DashAlertsSectionView · DashTopContributorsView
+│   │   ├── Chart/             DashMultiLineChart · DashInteractiveChartCanvas
+│   │   │                      SeriesLayer · MultiTooltipOverlay
+│   │   ├── Health/            HealthScoreCalculator · HealthScoreRing · HealthStatus
+│   │   └── Models/            ContainerStatsHistory · GlobalStatPoint · ChartMetrics
 │   │
-│   ├── 📂 Containers/                  (35+ fayl)
-│   │   ├── 📂 Images+Network+Volume/
-│   │   │   ├── ImagesListView
-│   │   │   ├── NetworksListView
-│   │   │   └── VolumesListView
-│   │   ├── 📂 Premium/
-│   │   │   ├── PremiumImageRow
-│   │   │   ├── PremiumNetworkRow
-│   │   │   ├── PremiumVolumeRow
-│   │   │   └── PremiumRowShell
-│   │   ├── 📂 ContainersDetail/
-│   │   │   ├── ContainerDetailView     ← env vars, ports, mounts
-│   │   │   ├── ContainerDetailViewModel← detailLoaded flag
-│   │   │   ├── ContainerActionsCard    ← start/stop/restart/remove
-│   │   │   ├── ContainerLiveMetricsCard← real-time stats
-│   │   │   ├── ContainerCriticalBanner ← system-critical lock
-│   │   │   └── ContainerWSStatus       ← WS connection indicator
-│   │   ├── ContainersViewModel         ← stream persistence
-│   │   ├── ContainersView
-│   │   ├── ContainerCard               ← live metric strip
-│   │   ├── ContainerCardMetricStrip
-│   │   ├── ContainersTabViewModel      ← lazy load images/vol/net
-│   │   └── ContainersTabView
+│   ├── 📂 Containers/         (35+ fayl)
+│   │   ├── Images+Network+Volume/   ImagesListView · NetworksListView · VolumesListView
+│   │   ├── Premium/           PremiumImageRow · PremiumNetworkRow · PremiumVolumeRow
+│   │   ├── ContainersDetail/  ContainerDetailView · ContainerDetailViewModel
+│   │   │                      ContainerActionsCard · ContainerLiveMetricsCard
+│   │   │                      ContainerCriticalBanner · ContainerWSStatus
+│   │   └── (root)             ContainersViewModel · ContainerCard · ContainersTabView
 │   │
-│   ├── 📂 Alerts/                      (20+ fayl)
-│   │   ├── 📂 ReusableComponents/
-│   │   │   ├── AlertSeverity
-│   │   │   ├── AlertFilterType
-│   │   │   ├── AlertEvents
-│   │   │   └── AlertTimeFormatter
-│   │   ├── 📂 ReusableViews/
-│   │   │   ├── ProAlertRow             ← glassmorphism alert kart
-│   │   │   ├── ProAlertRowGlow / Header / MetricPill / ...
-│   │   │   ├── SeverityPill
-│   │   │   ├── AlertsSearchBar
-│   │   │   └── AlertsFilterRow
-│   │   ├── AlertsView
-│   │   ├── AlertViewController
-│   │   └── AlertViewModel              ← didLoadOnce, 4s refresh
+│   ├── 📂 Alerts/             (20+ fayl)
+│   │   ├── ReusableComponents/  AlertSeverity · AlertFilterType · AlertTimeFormatter
+│   │   ├── ReusableViews/       ProAlertRow · SeverityPill · AlertsSearchBar
+│   │   │                        ProAlertRowGlow · ProAlertRowMetricPill
+│   │   └── (root)             AlertsView · AlertViewModel · AlertViewController
 │   │
-│   ├── 📂 Logs/                        (20+ fayl)
-│   │   ├── LogsView / LogsViewModel
-│   │   ├── LogsStreamLogic             ← 1500 limit, 6 retry
-│   │   ├── TerminalOutputView
-│   │   ├── TerminalLogLine             ← no re-flash on scroll
-│   │   ├── TerminalTimestamp / TerminalMessageText
-│   │   ├── LogFlashOverlay / BlinkingCursor
-│   │   ├── LogLevel / LogLevelBadge / LogLevelChip
-│   │   ├── ContainerPickerView
-│   │   └── StreamStatusBadge
+│   ├── 📂 Logs/               (20+ fayl)
+│   │   ├── Terminal/          TerminalOutputView · TerminalLogLine · TerminalTimestamp
+│   │   │                      LogFlashOverlay · BlinkingCursor · TerminalMessageText
+│   │   ├── Controls/          ContainerPickerView · LogLevelFilterRow · StreamStatusBadge
+│   │   └── (root)             LogsView · LogsViewModel · LogsStreamLogic
 │   │
-│   └── 📂 Settings/                    (25+ fayl)
-│       ├── SettingsView / SettingsViewModel ← deinit cancel
-│       ├── ServerCardView / ServerSetupSheetView
-│       ├── NotificationsCardView
-│       ├── AlertFlowCardView           ← CPU threshold slider
-│       ├── AlertEmailCardView
-│       ├── SignOutCardView
-│       ├── FlowConnectorView           ← animated connection diagram
-│       ├── ConnectionStatusCapsule
-│       └── PrettyHostFormatter
+│   └── 📂 Settings/           (25+ fayl)
+│       ├── Cards/             ServerCardView · NotificationsCardView · AlertFlowCardView
+│       │                      AlertEmailCardView · SignOutCardView
+│       ├── Server/            ServerSetupSheetView · FlowConnectorView
+│       │                      ConnectionStatusCapsule · PrettyHostFormatter
+│       └── (root)             SettingsView · SettingsViewModel · SettingsViewController
 │
 ├── 📂 Network Layer/
-│   ├── 📂 Endpoint/
-│   │   ├── LumenService                ← protocol
-│   │   ├── RealLumenService            ← REST implementation
-│   │   └── PocketLumenEndpoint         ← URL builder
-│   ├── 📂 Mock/
-│   │   ├── MockStatsHub                ← sin-wave + spike engine
-│   │   ├── MockLumenService
-│   │   ├── MockLogsHub
-│   │   ├── MockData                    ← threshold-uyğun test data
-│   │   └── MockWebSocketClient
-│   └── 📂 WebSocket/
-│       ├── StatsStreaming              ← protocol
-│       ├── StatsWebSocketService
-│       ├── StatsStreamViewModel        ← 350ms delay, cache
-│       ├── StatsCache / CachedStatsEnvelope
-│       ├── AlertSeverityHelper         ← cpuHigh=20%, cpuMedium=12%
-│       ├── DateParser                  ← nanosecond fix
-│       ├── DefaultWebSocketClient
-│       ├── WebSocketBackoff            ← exponential retry
-│       ├── LogsStreaming / LogsWebSocketService
-│       ├── LocalThresholdStore         ← UserDefaults wrapper
-│       └── WSRoute / WebSocketState
+│   ├── Endpoint/              LumenService (protocol) · RealLumenService · PocketLumenEndpoint
+│   ├── Mock/                  MockStatsHub · MockLumenService · MockLogsHub
+│   │                          MockData · MockWebSocketClient
+│   └── WebSocket/             StatsStreaming · StatsWebSocketService · StatsStreamViewModel
+│                              AlertSeverityHelper · DateParser · DefaultWebSocketClient
+│                              WebSocketBackoff · LocalThresholdStore · WSRoute
 │
-├── 📂 MainTabBar/
-│   └── MainTabBarController
+├── 📂 MainTabBar/             MainTabBarController
 │
-└── 📂 DesignSystem/
-    ├── DS+Color / DS+Font
-    ├── DS+Space / DS+Radius / DS+Anim
-    └── AppEnvironment                  ← Mock ↔ Real switch
+└── 📂 DesignSystem/           DS+Color · DS+Font · DS+Space · DS+Radius · DS+Anim
+                               AppEnvironment (Mock ↔ Real switch)
 ```
+
+<br/>
 
 ---
 
@@ -761,40 +433,29 @@ Final Project/
 
 ### Tələblər
 
-```
-✅  Xcode 15.0+
-✅  iOS 17.0+ simulator və ya device
-✅  Swift 5.9+
-✅  CocoaPods (Firebase üçün)
-```
+| | Versiya |
+|-|---------|
+| Xcode | 15.0+ |
+| iOS target | 17.0+ |
+| Swift | 5.9+ |
+| CocoaPods | Aktual |
 
-### Addım-addım
+<br/>
+
+### Addımlar
 
 ```bash
-# 1. Repo klonla
 git clone https://github.com/username/lumen-ios.git
 cd lumen-ios
-
-# 2. Pod-ları yüklə
 pod install
-
-# 3. Workspace aç (xcworkspace — xcodeproj DEYİL!)
 open "Final Project.xcworkspace"
-
-# 4. Firebase konfiqurasiyası
-# GoogleService-Info.plist faylını
-# Final Project/ qovluğuna əlavə et
-
-# 5. Build & Run  →  ⌘R
 ```
 
-### Mock Mode — şəbəkəsiz test
+`GoogleService-Info.plist` faylını `Final Project/` qovluğuna əlavə et, sonra **⌘R** ilə build et.
 
-```
-DEBUG build → MockLumenService + MockStatsHub avtomatik aktiv
-Heç bir server, heç bir konfiqurasiya tələb olunmur ✅
-Simulator-da birbaşa işlədilir ✅
-```
+> 💡 **Mock Mode:** `DEBUG` build-da server olmadan işləyir. Simulator-da birbaşa çalışdırın.
+
+<br/>
 
 ---
 
@@ -802,57 +463,61 @@ Simulator-da birbaşa işlədilir ✅
 
 | Texnologiya | İstifadə |
 |-------------|---------|
-| **Swift 5.9** | Əsas proqramlaşdırma dili |
-| **SwiftUI 5.0** | Bütün UI komponentlər |
-| **UIKit** | Tab navigation layer (push/pop) |
-| **Swift Concurrency** | async/await, AsyncThrowingStream |
-| **URLSessionWebSocketTask** | Native WebSocket (no 3rd party) |
+| **Swift 5.9** | Əsas dil |
+| **SwiftUI 5** | Bütün UI komponentlər |
+| **UIKit** | Tab navigation (UIHostingController) |
+| **Swift Concurrency** | async/await · AsyncThrowingStream |
+| **URLSessionWebSocketTask** | Native WebSocket — third-party yoxdur |
 | **Firebase Auth** | İstifadəçi autentifikasiyası |
 | **Combine** | Settings auto-save debounce |
-| **UserDefaults** | CPU threshold, preferences |
-| **NotificationCenter** | Container refresh cross-view signal |
+| **UserDefaults** | CPU threshold · preferences |
+| **NotificationCenter** | Cross-view container refresh signalı |
+
+<br/>
 
 ---
 
-## 📊 Performance Göstəriciləri
+## 📊 Performance
 
-```
-WebSocket streams    →  hər konteyner üçün 1 stream (1s interval)
-Chart history        →  40 nöqtə / konteyner (≈ 1.5 dəqiqə)
-Dashboard recalc     →  hər 2s (exponential smoothing ilə)
-Alert auto-refresh   →  hər 4s
-Container sync       →  hər 15s (yeni konteyner kəşfi)
-Log buffer limit     →  max 1500 sətir
-WS reconnect         →  max 6 cəhd, backoff 1s→2s→4s→8s→max 30s
-Skeleton loading     →  ContainerCardSkeleton + ContainersSkeletonList
-```
+| Göstərici | Dəyər |
+|-----------|-------|
+| WebSocket stream interval | ~1 saniyə / konteyner |
+| Chart history buffer | 40 nöqtə (~1.5 dəq) |
+| Dashboard recalc interval | 2 saniyə |
+| Alert refresh interval | 4 saniyə |
+| Container sync interval | 15 saniyə |
+| Log buffer limit | 1500 sətir |
+| WS reconnect limit | 6 cəhd (exponential backoff) |
+| StatsStreamViewModel delay | 350ms (detail view animation üçün) |
+
+<br/>
 
 ---
 
-## 🧑‍💻 Kritik Dizayn Qərarları
+## 💡 Əsas Dizayn Qərarları
 
-**1. CPU faiz formatı** — Real backend `cpuUsage: 22.58` göndərir. Bu **22.58% CPU**-dur, 0.2258 fraction deyil. `normalizeToPercent()` yalnız `clamp(0, 100)` edir, `×100` etmir.
+**Stream Persistence** — `onDisappear` WebSocket stream-ləri öldürmür. Əks halda container detail-dən geri gəldikdə 1–2 saniyə "Connecting..." görünürdü.
 
-**2. Stream persistence** — `ContainersViewModel.onDisappear()` streamTask-ları öldürmür. Bunu etmək container detail-dən geri gəldikdə 1–2s "Connecting..." vəziyyəti yaradırdı.
+**didLoadOnce / didStartOnce** — Tab keçidlərində `onAppear` yenidən tetiklənir. Bu flag-lər gereksiz şəbəkə requestlərini bloklayır.
 
-**3. didLoadOnce pattern** — Tab keçidlərində `onAppear` yenidən çağırılır. `didLoadOnce` flag ilk yükləmədən sonra şəbəkə requestini bloklayır.
+**Hysteresis** — 19.8% CPU-da score "critical" olub, 19.7%-ə düşəndə "healthy" olmasın deyə enter/exit threshold-ları fərqləndirildi.
 
-**4. Hysteresis** — Score 20%-ə çatanda Critical, amma 19.5%-ə düşəndə dərhal Normal olmur. Exit threshold 15%-dir. Beləliklə 19.5–20% aralığında score titrəmir.
+**nonisolated deinit** — `DashboardCoordinator` class-level `@MainActor` daşımır. Hər metod ayrıca annotasiya alır. Bu `deinit`-dən `cancelAllTasks()` çağırışını mümkün edir.
 
-**5. nonisolated deinit** — `DashboardCoordinator` class-level `@MainActor` daşımır. Hər metod ayrıca annotasiya daşıyır. Bu `deinit`-dən `cancelAllTasks()` çağırmasını mümkün edir.
+**CPU Faiz Formatı** — Real backend `cpuUsage: 22.58` göndərir, bu 22.58% deməkdir. `normalizeToPercent()` yalnız `clamp(0, 100)` edir — çarpma yoxdur.
+
+<br/>
 
 ---
 
 <div align="center">
 
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A84FF,100:30D158&height=120&section=footer" width="100%"/>
 
 **Lumen** — *Cibinizdəki data center.*
 
 ⭐ Layihəni bəyəndinizsə star vurun!
 
-<br/>
-
-Made with ❤️ and Swift · Bakı, Azərbaycan 🇦🇿
+Made with ❤️ · Swift · Bakı, Azərbaycan 🇦🇿
 
 </div>
