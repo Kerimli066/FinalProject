@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A84FF,50:5E5CE6,100:30D158&height=280&section=header&text=LUMEN&fontSize=100&fontColor=ffffff&fontAlignY=42&desc=Professional%20Docker%20Infrastructure%20Monitor%20for%20iOS&descAlignY=62&descSize=20&descColor=ffffffcc&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A84FF,50:5E5CE6,100:30D158&height=300&section=header&text=LUMEN&fontSize=110&fontColor=ffffff&fontAlignY=42&desc=Professional%20Docker%20Infrastructure%20Monitor%20for%20iOS&descAlignY=62&descSize=22&descColor=ffffffcc&animation=fadeIn" width="100%"/>
 
 <br/>
 
@@ -15,9 +15,9 @@
 
 <br/>
 
-> ### 🌟 *"Cibinizdəki data center"*
-> **Lumen** — DevOps mühəndisləri üçün yaradılmış, real-time WebSocket axınları,  
-> interaktiv chartlar və ağıllı health scoring ilə tam silahlanmış natif iOS tətbiqi.
+> ### 🌟 *"Your entire data center, right in your pocket."*
+> **Lumen** is a fully native iOS application built for DevOps engineers, SREs, and system administrators  
+> who demand real-time visibility and full control over their Docker infrastructure — from anywhere.
 
 <br/>
 
@@ -27,17 +27,17 @@
 
 <br/>
 
-## 🧭 Mündəricat
+## 🧭 Table of Contents
 
-| 🔗 Bölmə | 🔗 Bölmə |
+| 🔗 | 🔗 |
 |---|---|
-| [🌟 Lumen haqqında](#-lumen-haqqında) | [✨ Xüsusiyyətlər](#-xüsusiyyətlər) |
-| [🏗️ Arxitektura](#️-arxitektura) | [⚡ Dashboard & Health Score](#-dashboard--health-score) |
-| [🐳 Container Sistemi](#-container-sistemi) | [🚨 Alert Sistemi](#-alert-sistemi) |
+| [🌟 About](#-about) | [✨ Features](#-features) |
+| [🏗️ Architecture](#️-architecture) | [⚡ Dashboard & Health Score](#-dashboard--health-score) |
+| [🐳 Container Management](#-container-management) | [🚨 Alert System](#-alert-system) |
 | [📜 Live Logs](#-live-logs) | [⚙️ Settings](#️-settings) |
 | [🔌 Network Layer](#-network-layer) | [🧪 Mock Backend](#-mock-backend) |
-| [🎨 Design System](#-design-system) | [📁 Layihə Strukturu](#-layihə-strukturu) |
-| [🚀 Quraşdırma](#-quraşdırma) | [🛠️ Tech Stack](#️-tech-stack) |
+| [🎨 Design System](#-design-system) | [📁 Project Structure](#-project-structure) |
+| [🚀 Installation](#-installation) | [🛠️ Tech Stack](#️-tech-stack) |
 
 <br/>
 
@@ -45,19 +45,19 @@
 
 <br/>
 
-## 🌟 Lumen haqqında
+## 🌟 About
 
-**Lumen** — iOS üçün sıfırdan yazılmış tam professional Docker monitoring tətbiqidir. Tətbiq, DevOps mühəndislərinin, SRE-lərin və sistem administratorlarının gün ərzində ən çox ehtiyac duyduğu şeyləri — konteyner vəziyyəti, resurs istifadəsi, xəbərdarlıqlar və loglar — bir yerdə, real vaxtda, cibindəki iPhone-dan əlçatan edir.
+**Lumen** is a professional-grade Docker monitoring application built entirely from scratch for iOS. It connects directly to your Docker backend via WebSocket streams, opens a dedicated real-time channel per container, calculates infrastructure health using a hysteresis-based scoring engine, and delivers instant alerts when critical thresholds are breached — all in pure, native SwiftUI with zero third-party UI dependencies.
 
-Lumen sadəcə bir dashboard tətbiqi deyil. Hər konteyner üçün ayrı-ayrı WebSocket axınları açır, sinusoid dalğa + spike simulasiyası ilə realistik mock mühit yaradır, hysteresis-based health scoring ilə infrastructure-un sağlamlığını saniyə-saniyə izləyir və bütün bunları tamamilə natif SwiftUI ilə, üçüncü tərəf UI kitabxanası olmadan həyata keçirir.
+Lumen is not just a dashboard. It is a complete infrastructure observability tool designed to feel as fast and reliable as the servers it monitors.
 
 <br/>
 
 <div align="center">
 
-| 👩‍💻 Developer | 📅 Başlama | 🏙️ Yer | 🎯 Platform | 🔐 Auth |
+| 👩‍💻 Developer | 📅 Started | 🏙️ Location | 🎯 Platform | 🔐 Auth |
 |:---:|:---:|:---:|:---:|:---:|
-| Sabina Karimli | Fevral 2026 | Bakı 🇦🇿 | iPhone iOS 17+ | Firebase |
+| Sabina Karimli | February 2026 | Baku, Azerbaijan 🇦🇿 | iPhone · iOS 17+ | Firebase |
 
 </div>
 
@@ -67,45 +67,54 @@ Lumen sadəcə bir dashboard tətbiqi deyil. Hər konteyner üçün ayrı-ayrı 
 
 <br/>
 
-## ✨ Xüsusiyyətlər
+## ✨ Features
 
 <br/>
 
-### 🖥️ Dashboard — Real-time İnfrastruktur Mərkəzi
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Dashboard, tətbiqin ürəyidir. Açıldığı anda bütün Docker infrastrukturunun sağlamlıq vəziyyətini bir baxışda görürsünüz. Üstdə böyük, animasiyalı **Health Score Ring** — 0-dan 100-ə qədər rəng dəyişdirir, hysteresis və exponential smoothing sayəsində ani titrəmə olmadan hamar keçid edir. Yanında 4 iri metrik kart: ümumi CPU faizi, istifadə olunan Memory (MB), işləyən konteyner sayı, kritik vəziyyətdəki konteyner sayı.
+### 🖥️ Real-Time Dashboard
+A full-screen infrastructure overview that updates every second. Animated Health Score Ring, interactive multi-line charts, top resource consumers, and a live alert panel — everything visible at a single glance without scrolling.
 
-Aşağıda **interaktiv multi-line chartlar** — CPU Contribution, CPU Trend, Memory Trend — 3 tab arasında keçid edərək infrastrukturun son 1.5 dəqiqəlik tarixini görürsünüz. Hər nöqtəyə toxunduqda tooltip açılır, dəqiq dəyəri göstərir. Daha aşağıda **Top Contributors** — ən çox CPU və RAM istifadə edən konteynerların sıralı siyahısı. Ən sonda isə **son 5 kritik xəbərdarlıq** — birbaşa Dashboard-dan Alerts-ə keçmədən oxuya bilərsiniz.
+</td>
+<td width="50%" valign="top">
 
-<br/>
+### 🐳 Container Management
+Live metric cards for every running container. CPU percentage, memory usage, and network traffic update in real time via dedicated WebSocket streams. Tap any container to view environment variables, port mappings, and volume mounts.
 
-### 🐳 Containers — Canlı Metrik Kartlar
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Containers tab-ı açıldığında bütün Docker konteynerləri kart formasında sıralanır. Hər kartın içində **real-time metric strip** var — hər saniyə WebSocket-dən gələn data ilə avtomatik yenilənir. Sol tərəfdə konteynerin adı, image-i, rəngli ikon. Sağda CPU progress bar (faizlə, rəngli), Memory progress bar, şəbəkə trafiği (download ↓ upload ↑ bytes). Karta tıklayanda **Detail View** açılır: environment variables, port mapping, mounted volumes, actions panel.
+### 🚨 Smart Alert System
+Severity-based alerting with automatic refresh. Glassmorphism-styled alert cards display the container name, severity level, CPU/memory values, and a relative timestamp. Filter by severity or search by container name instantly.
 
-**Actions Panel**-də Start, Stop, Restart, Remove düymələri var. `lumen-app` kimi sistem-kritik konteynerlar üçün destructive actions avtomatik olaraq deaktiv edilir — təsadüfən silinmə riski sıfır. **Pull-to-refresh** ilə yuxarı sürüşdürdükdə tam reset baş verir. Tabs: Containers / Images / Volumes / Networks — hamısı bir yerdə.
+</td>
+<td width="50%" valign="top">
 
-<br/>
+### 📜 Live Log Streaming
+A terminal-style real-time log viewer with nanosecond-precision timestamps, log level filtering, auto-scroll, and a line flash animation on every new entry. Supports continuous streaming with automatic reconnection.
 
-### 🚨 Alerts — Ağıllı Xəbərdarlıq Mərkəzi
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Alert sistemi CPU və Memory threshold-larına əsaslanır. Kritik alertlər qırmızı glow ilə, high alertlər narıncı, medium isə sarı ilə göstərilir. Hər alert kartı — **ProAlertRow** — glassmorphism dizayn ilə hazırlanmışdır: şüşə effektli arxa fon, severity rənginə uyğun sol border, konteyner ikonu, CPU/Memory metric pill-ləri, relative timestamp ("2 dəq əvvəl").
+### ⚙️ Flexible Settings
+Adjustable CPU alert threshold, server URL configuration with connection testing, notification toggle, Firebase email verification display, and secure sign-out — all with auto-save debounce.
 
-Hər 4 saniyədə bir avtomatik yenilənir. Severity filter ilə yalnız Critical, yalnız High və ya hamısını görə bilərsiniz. Axtarış paneli ilə konteyner adına görə filtirləyə bilərsiniz. "Clear All" düyməsi bütün alert tarixini siləcəyini soruşur — confirmation dialog-dan sonra təmizlənir.
+</td>
+<td width="50%" valign="top">
 
-<br/>
+### 🧪 Offline Mock Mode
+A full simulation environment for development and testing. Runs entirely without a server — realistic container behavior, spike simulation, alerts, and log streams all active automatically in DEBUG builds.
 
-### 📜 Logs — Terminal-Style Canlı Axın
-
-Logs tab-ı, birbaşa serverkə qoşulmuş terminal kimidir. Konteyner seçicidən istədiyiniz konteyneri seçirsiniz, WebSocket bağlantısı qurulur və loglar axmağa başlayır. Hər log sətri: sola sıra nömrəsi, nanosaniyə dəqiqliyində timestamp, log level badge (DEBUG / INFO / WARN / ERROR), rəngli mətn. Yeni log gəldikdə həmin sətir qısa müddət parlayır — **LogFlashOverlay** effekti. Sol tərəfdə yanıb-sönən terminal kursoru (BlinkingCursor) aktivliyi göstərir.
-
-Log level filter ilə yalnız ERROR-ları görə, yalnız WARN-ları izləyə bilərsiniz. Buffer 1500 sətirdə tutulur — performans itkisi olmadan saatlarla izləyə bilərsiniz. 6 reconnect cəhdindən sonra istifadəçiyə bildiriş göstərilir.
-
-<br/>
-
-### ⚙️ Settings — Tam Fərdiləşdirmə
-
-Settings ekranı bir neçə kart-bölməyə ayrılmışdır. **Server Card** — host URL-i daxil edib bağlantı testi edirsiniz, animasiyalı FlowConnectorView bağlantı axını vizual olaraq göstərir. **CPU Threshold Slider** — 1%-dən 99%-ə qədər sürüşdürün, Alert sistemi dərhal yeni threshold ilə işləməyə başlayır, UserDefaults-a avtomatik saxlanır. **Notifications Card** — bildirişləri açıb-bağlayırsınız. **Alert Email Card** — Firebase-dəki verified email-i göstərir. **Sign Out** — hesabdan çıxış.
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -113,58 +122,71 @@ Settings ekranı bir neçə kart-bölməyə ayrılmışdır. **Server Card** —
 
 <br/>
 
-## 🏗️ Arxitektura
+## 🏗️ Architecture
 
-Lumen, **MVVM + Coordinator** pattern üzərindədir. UIKit navigation qatı, üzərindəki SwiftUI view-ları UIHostingController vasitəsilə embed edir. Bu hibrid yanaşma həm SwiftUI-nin deklarativ gücündən, həm də UIKit-in navigation etibarlılığından istifadə etməyə imkan verir.
+Lumen is built on **MVVM + Coordinator** pattern. A UIKit navigation layer embeds SwiftUI views via `UIHostingController`, combining the declarative power of SwiftUI with the navigation reliability of UIKit.
 
 <br/>
 
 <div align="center">
 
 ```
-                    ┌─────────────────────────────┐
-                    │   MainTabBarController       │
-                    │        (UIKit)               │
-                    └──────────┬──────────────────┘
-                               │ UIHostingController
-          ┌────────────────────┼────────────────────┐
-          │                    │                    │
-    Dashboard            Containers             Alerts / Logs / Settings
-    ViewModel            ViewModel              ViewModel × 3
-          │                    │
-    DashboardCoordinator  WebSocket Streams × N
-    ├── snapshotTimer (4s)      │
-    ├── alertTimer (20s)   latestStats[id]
-    ├── containerTimer(15s)     │
-    └── recalcTimer (2s)   ContainerCard × N
-                               │
-                    ┌──────────▼──────────┐
-                    │    Service Layer     │
-                    │  LumenService ───── RealLumenService (REST)
-                    │                └─── MockLumenService (mock)
-                    │  StatsStreaming ─── RealStatsHub (WebSocket)
-                    │                └─── MockStatsHub (sin-wave)
-                    └─────────────────────┘
+┌──────────────────────────────────────────────────────┐
+│              UIKit Navigation Layer                  │
+│           MainTabBarController                       │
+│   Dashboard · Containers · Alerts · Logs · Settings  │
+└────────────────────┬─────────────────────────────────┘
+                     │  UIHostingController
+┌────────────────────▼─────────────────────────────────┐
+│                SwiftUI Views                         │
+│                                                      │
+│  DashboardView ──── DashboardViewModel               │
+│        │                  │                          │
+│        │          DashboardCoordinator               │
+│        │          ├── snapshotTimer   (4s)           │
+│        │          ├── alertTimer      (20s)          │
+│        │          ├── containerTimer  (15s)          │
+│        │          └── streamTasks     (per WS)       │
+│        │                                             │
+│  ContainersView ─── ContainersViewModel              │
+│        └── ContainerCard × N  ← live metric strips  │
+│               └── ContainerDetailView               │
+│                      └── StatsStreamViewModel       │
+│                                                      │
+│  AlertsView · LogsView · SettingsView                │
+└────────────────────┬─────────────────────────────────┘
+                     │
+┌────────────────────▼─────────────────────────────────┐
+│                 Service Layer                        │
+│                                                      │
+│  LumenService (protocol)                             │
+│  ├── RealLumenService    →  REST API                 │
+│  └── MockLumenService    →  Simulated responses      │
+│                                                      │
+│  StatsStreaming (protocol)                           │
+│  ├── RealStatsHub        →  WebSocket streams        │
+│  └── MockStatsHub        →  Sin-wave + spike engine  │
+└──────────────────────────────────────────────────────┘
 ```
 
 </div>
 
 <br/>
 
-### 🧩 Əsas Arxitektura Qərarları
+### 🧩 Core Architectural Decisions
 
-| 🔑 Pattern | 📍 İstifadə Yeri | 💡 Niyə? |
+| 🔑 Pattern | 📍 Where | 💡 Why |
 |---|---|---|
-| `@MainActor` | Bütün ViewModels | Thread-safe UI yeniləmələri |
-| `AsyncThrowingStream` | Stats streaming | Swift structured concurrency |
-| `didLoadOnce` flag | AlertVM, DetailVM | Tab keçidlərində double request yoxdur |
-| `didStartOnce` flag | DashboardVM | Tab-switch-də double-start yoxdur |
-| Hysteresis thresholds | HealthScoreCalculator | Score titrəməsi (flutter) aradan qalxır |
-| Exponential smoothing | DashboardVM | Hamar, animasiyalı health score keçidi |
-| Protocol-based services | LumenService, StatsStreaming | Mock ↔ Real asanca dəyişir |
-| Coordinator pattern | DashboardCoordinator | Timer + stream lifecycle bir yerdə |
-| Stream persistence | ContainersViewModel | Navigation-da stats itirilmir |
-| Optimistic UI update | Container actions | İstifadəçi dərhal cavab hiss edir |
+| `@MainActor` | All ViewModels | Guarantees thread-safe UI updates |
+| `AsyncThrowingStream` | Stats streaming | Structured Swift concurrency |
+| `didLoadOnce` flag | AlertVM, DetailVM | Prevents duplicate network requests on tab switch |
+| `didStartOnce` flag | DashboardVM | Prevents double-start on tab reappear |
+| Hysteresis thresholds | HealthScoreCalculator | Eliminates score flickering at threshold boundaries |
+| Exponential smoothing α=0.3 | DashboardVM | Produces smooth, animated health score transitions |
+| Protocol-based services | LumenService, StatsStreaming | Seamless Mock ↔ Real swap |
+| Coordinator pattern | DashboardCoordinator | Centralized timer and stream lifecycle management |
+| Stream persistence | ContainersViewModel | WebSocket streams survive navigation push/pop |
+| Optimistic UI updates | Container actions | Zero perceived latency for user interactions |
 
 <br/>
 
@@ -174,42 +196,42 @@ Lumen, **MVVM + Coordinator** pattern üzərindədir. UIKit navigation qatı, ü
 
 ## ⚡ Dashboard & Health Score
 
-Dashboard-un ən mürəkkəb hissəsi Health Score sistemidir. Sadə bir faiz deyil — üç ayrı texnika birgə işləyir və real infrastruktur davranışını əks etdirir.
+The Dashboard is Lumen's most sophisticated component. It combines three independent techniques to produce a health score that is both accurate and visually stable.
 
 <br/>
 
 ### 🏥 Penalty-Based Scoring
 
-Hər 2 saniyədə bir bütün aktiv konteynerlərin məlumatları toplanır. Ən yüksək CPU istifadə edən konteyner penalty hesablamasına əsas olur (ortalama deyil, maksimum — çünki bir konteyner sistemi çökdürə bilər). 100 başlangıc balından aşağıdakı penaltilər çıxılır:
+Every 2 seconds, metrics from all active containers are collected. The **maximum** CPU value across all containers drives the penalty calculation — not the average — because a single runaway container can destabilize an entire system. The score starts at 100 and penalties are subtracted:
 
 <br/>
 
 <div align="center">
 
-| 🚦 Vəziyyət | ⬇️ Base Penalti | ➕ Extra | 🔝 Maks |
+| 🚦 Condition | ⬇️ Base Penalty | ➕ Extra | 🔝 Max |
 |:---|:---:|:---:|:---:|
-| 🔴 CPU ≥ 20% — Critical | −15 | Hər əlavə 5% üçün −1 | −40 |
-| 🟠 CPU ≥ 12% — High | −10 | Hər əlavə 6% üçün −1 | −20 |
-| 🟡 CPU orta > 5% | −5 | — | — |
-| 🔵 CPU orta > 1% | −2 | — | — |
-| 🔴 Memory ≥ 80% | −10 (mütənasib) | — | −20 |
-| 🟠 Memory ≥ 60% | −5 (mütənasib) | — | −12 |
-| 🚨 Hər kritik alert | −5 | — | −20 |
-| ⛔ Hər dayanmış kont. | −3 | — | −12 |
+| 🔴 CPU ≥ critical threshold | −15 | −1 per extra 5% | −40 |
+| 🟠 CPU ≥ high threshold | −10 | −1 per extra 6% | −20 |
+| 🟡 Average CPU moderately elevated | −5 | — | — |
+| 🔵 Average CPU slightly elevated | −2 | — | — |
+| 🔴 Memory ≥ 80% | −10 (proportional) | — | −20 |
+| 🟠 Memory ≥ 60% | −5 (proportional) | — | −12 |
+| 🚨 Each critical active alert | −5 | — | −20 |
+| ⛔ Each stopped container | −3 | — | −12 |
 
 </div>
 
 <br/>
 
-### 🔀 Hysteresis — Titrəmənin Qarşısı
+### 🔀 Hysteresis — Eliminating Score Flutter
 
-Threshold-ların üstündə-altında oynayan bir konteyner olduqda score saniyədə dəfələrlə dəyişərdi — bu çox rahatsızedici görünür. Hysteresis ilə bu problem həll edilib: **girmə** threshold-u çıxma threshold-undan yüksəkdir.
+Without hysteresis, a container hovering near a threshold would cause the health score to oscillate every second — a terrible user experience. Enter and exit thresholds are deliberately separated to create a stable buffer zone:
 
 <br/>
 
 <div align="center">
 
-| 📊 Metrik | 🔴 Enter (kritik başlayır) | 🟢 Exit (normal qayıdır) | 🛡️ Qorunan zona |
+| 📊 Metric | 🔴 Enter (penalty applied) | 🟢 Exit (penalty released) | 🛡️ Buffer Zone |
 |:---|:---:|:---:|:---:|
 | CPU Critical | ≥ 20% | < 15% | 15% – 20% |
 | CPU High | ≥ 12% | < 8% | 8% – 12% |
@@ -220,60 +242,58 @@ Threshold-ların üstündə-altında oynayan bir konteyner olduqda score saniyə
 
 <br/>
 
-### 📈 Exponential Smoothing — Hamar Keçid
+### 📈 Exponential Smoothing — Fluid Animation
 
-Hədəf score dərhal göstərilmir. Əvvəlki dəyər 70%, yeni hədəf isə 30% çəki daşıyır (α = 0.3). Bu sayədə 75-dən 40-a keçid bir saniyəlik sıçrayış deyil, vizual olaraq hamar bir eniş olur. HealthScoreRing animasiyası da bununla sinxronlaşır.
+The calculated target score is not displayed immediately. The previous score carries 70% weight while the new target carries 30% (α = 0.3). This produces a smooth, visually pleasing transition instead of an abrupt jump, and keeps the HealthScoreRing animation perfectly in sync.
 
 <br/>
 
-### 🎨 Health Status Rəng Sistemi
+### 🎨 Health Status Levels
 
 <div align="center">
 
-| 💯 Score Aralığı | 🏷️ Status | 🎨 Rəng | 💬 Mənası |
+| 💯 Score Range | 🏷️ Status | 🎨 Color | 💬 Meaning |
 |:---:|:---:|:---:|:---|
-| 70 – 100 | ✅ Healthy | 🟢 Yaşıl | Sistem sabit, kritik problem yoxdur |
-| 40 – 69 | ⚠️ Warning | 🟡 Sarı | Diqqət tələb edən vəziyyətlər var |
-| 0 – 39 | 🚨 Critical | 🔴 Qırmızı | Dərhal müdaxilə lazımdır |
+| 70 – 100 | ✅ Healthy | 🟢 Green | System is stable, no critical issues detected |
+| 40 – 69 | ⚠️ Warning | 🟡 Yellow | Elevated resource usage, attention recommended |
+| 0 – 39 | 🚨 Critical | 🔴 Red | Immediate action required |
 
 </div>
 
 <br/>
 
-### ⏱️ Dashboard Timer Orkestrası
+### ⏱️ Dashboard Timer Orchestra
 
-Dashboard fonda 4 ayrı timer işlədir. Bunların hamısı `DashboardCoordinator` tərəfindən idarə edilir:
+The Dashboard runs four independent background timers, all managed by `DashboardCoordinator`:
 
 <br/>
 
 <div align="center">
 
-| ⏰ Timer | 🔄 Interval | 📋 Vəzifə | 🎯 Nəticə |
+| ⏰ Timer | 🔄 Interval | 📋 Responsibility | 🎯 Effect |
 |:---|:---:|:---|:---|
-| 📸 snapshotTimer | 4 saniyə | `globalHistory`-ə yeni nöqtə əlavə edir | Chart-lar canlı yenilənir |
-| 🚨 alertTimer | 20 saniyə | Son alertləri API-dən çəkir | Dashboard alert paneli yenilənir |
-| 🐳 containerTimer | 15 saniyə | Yeni konteynerləri kəşf edir | Yeni axınlar açılır |
-| 🔢 recalcTimer | 2 saniyə | Aggregates + health score hesablayır | Ring + metrik kartlar yenilənir |
+| 📸 snapshotTimer | 4 seconds | Appends a point to global chart history | Charts update in real time |
+| 🚨 alertTimer | 20 seconds | Fetches latest alerts from API | Dashboard alert panel refreshes |
+| 🐳 containerTimer | 15 seconds | Discovers new containers, reconciles streams | New streams open automatically |
+| 🔢 recalcTimer | 2 seconds | Recalculates aggregates and health score | Ring and metric cards update |
 
 </div>
 
 <br/>
 
-### 📊 Chart Sistemi
-
-Dashboard-da 3 interaktiv chart tab-ı mövcuddur. Hər biri son ~1.5 dəqiqənin məlumatlarını göstərir. Konteyner başına 40 nöqtəlik rolling buffer saxlanır, hər 2.5 saniyədə bir yeni nöqtə əlavə edilir, köhnəsi çıxarılır.
-
-<br/>
+### 📊 Interactive Charts
 
 <div align="center">
 
-| 📈 Tab | 📊 Chart tipi | 📋 Göstərdiyi |
+| 📈 Tab | 📊 Chart Type | 📋 What It Shows |
 |:---|:---:|:---|
-| 🖥️ CPU Contribution | Multi-series | Hər konteynerin CPU töhfəsi ayrıca |
-| 📉 CPU Trend | Line chart | Ümumi infrastruktur CPU trendi |
-| 💾 Memory Trend | Line chart | Ümumi infrastruktur Memory trendi |
+| 🖥️ CPU Contribution | Multi-series line | Individual CPU usage per container |
+| 📉 CPU Trend | Aggregated line | Total infrastructure CPU over time |
+| 💾 Memory Trend | Aggregated line | Total infrastructure memory over time |
 
 </div>
+
+Each chart maintains a rolling buffer of 40 data points per container, appended every 2.5 seconds — approximately 1.5 minutes of live history. Touch any point on the chart to reveal a precise tooltip.
 
 <br/>
 
@@ -281,22 +301,22 @@ Dashboard-da 3 interaktiv chart tab-ı mövcuddur. Hər biri son ~1.5 dəqiqəni
 
 <br/>
 
-## 🐳 Container Sistemi
+## 🐳 Container Management
 
-### 🔄 Stream Lifecycle — Ən Kritik Qərar
+### 🔄 Stream Lifecycle — The Critical Design Decision
 
-Container sistemininin ən mühüm arxitektura qərarı — WebSocket stream-lərin navigasiya boyunca canlı qalmasıdır. Bu qərara gəlməzdən əvvəl hər `onDisappear`-də bütün stream-lər öldürülürdü. Detail view-dan geri qayıdanda kartlar 1–2 saniyə "Connecting..." göstərirdi — çox pis UX. İndi isə:
+The most important architectural decision in the container system: **WebSocket streams persist across navigation**. Previously, every `onDisappear` killed all streams. Navigating back from the detail view caused 1–2 seconds of blank cards while streams reconnected — a poor experience. The current approach:
 
 <br/>
 
 <div align="center">
 
-| 📍 Hadisə | 📥 loadTask | 📡 streamTasks | 💡 Nəticə |
+| 📍 Event | 📥 loadTask | 📡 streamTasks | 💡 Result |
 |:---|:---:|:---:|:---|
-| 🟢 `onAppear()` | 🔄 Yenilənir | ✅ Toxunulmur | Geri qayıdanda kartlar anında CPU göstərir |
-| 🔴 `onDisappear()` | ❌ Cancel | ✅ Canlı qalır | Detail açılsa da stream-lər ölmür |
-| 🔁 `refresh()` | 🔄 Yenilənir | 🔄 Tam reset | Pull-to-refresh hər şeyi yenidən yükləyir |
-| ⏱️ `containerTimer` | — | 🔄 Reconcile | Yeni kont. stream açır, yox olanı bağlayır |
+| 🟢 `onAppear()` | 🔄 Refreshed | ✅ Untouched | Cards show live CPU immediately on return |
+| 🔴 `onDisappear()` | ❌ Cancelled | ✅ Kept alive | Streams survive navigation push/pop |
+| 🔁 `refresh()` | 🔄 Refreshed | 🔄 Full reset | Pull-to-refresh reloads everything |
+| ⏱️ `containerTimer` | — | 🔄 Reconciled | New containers get streams; removed ones lose them |
 
 </div>
 
@@ -304,18 +324,18 @@ Container sistemininin ən mühüm arxitektura qərarı — WebSocket stream-lə
 
 ### ⚡ Container Actions
 
-Bütün konteyner əməliyyatları **optimistic update** ilə işləyir — server cavabını gözləmədən UI dərhal yenilənir. İstifadəçi 0 gecikmə hiss edir.
+All container operations use **optimistic UI updates** — the interface responds immediately without waiting for the server. If the server returns an error, the UI rolls back gracefully.
 
 <br/>
 
 <div align="center">
 
-| 🎮 Action | ⚡ Optimistic Update | 🔒 lumen-app | 📋 Əlavə |
+| 🎮 Action | ⚡ Optimistic Update | 🔒 System Lock | 📋 Notes |
 |:---|:---:|:---:|:---|
-| ▶️ Start | Dərhal "running" 🟢 | ✅ Mümkün | — |
-| ⏹️ Stop | Dərhal "exited" ⚫ | 🔒 Bloklu | Critical banner göstərilir |
-| 🔄 Restart | Dərhal "running" 🟢 | 🔒 Bloklu | Critical banner göstərilir |
-| 🗑️ Remove | Confirmation dialog | 🔒 Bloklu | Silinmə geri alınamaz |
+| ▶️ Start | Immediately shows "running" 🟢 | — | — |
+| ⏹️ Stop | Immediately shows "exited" ⚫ | 🔒 Blocked for critical containers | Critical banner displayed |
+| 🔄 Restart | Immediately shows "running" 🟢 | 🔒 Blocked for critical containers | Critical banner displayed |
+| 🗑️ Remove | Confirmation dialog required | 🔒 Blocked for critical containers | Irreversible action |
 
 </div>
 
@@ -323,21 +343,17 @@ Bütün konteyner əməliyyatları **optimistic update** ilə işləyir — serv
 
 ### 🃏 ContainerCard Anatomy
 
-Hər kart aşağıdakı vizual komponentlərdən ibarətdir:
-
-<br/>
-
 <div align="center">
 
-| 🧩 Komponent | 📋 Vəzifəsi |
+| 🧩 Component | 📋 Responsibility |
 |:---|:---|
-| 🎨 `ContainerCardBackground` | Glassmorphism arxa fon, severity glow |
-| 🖼️ `ContainerCardAvatar` | Konteyner tipi ikonu (rəngli) |
-| 📛 `ContainerCardNameBlock` | Ad + image tag |
-| 🔴 `ContainerStateBadge` | running / exited / paused badge |
-| 📊 `ContainerCardMetricStrip` | CPU% + MEM% progress barlar |
-| 🌐 `ContainerCardNetworkCell` | Download ↓ / Upload ↑ bytes |
-| 💀 `ContainerCardSkeleton` | Loading vəziyyəti animasiyası |
+| 🎨 `ContainerCardBackground` | Glassmorphism background with severity-aware glow |
+| 🖼️ `ContainerCardAvatar` | Color-coded container type icon |
+| 📛 `ContainerCardNameBlock` | Container name and image tag |
+| 🔴 `ContainerStateBadge` | running / exited / paused status badge |
+| 📊 `ContainerCardMetricStrip` | Real-time CPU% and Memory% progress bars |
+| 🌐 `ContainerCardNetworkCell` | Download ↓ / Upload ↑ in bytes |
+| 💀 `ContainerCardSkeleton` | Animated loading placeholder |
 
 </div>
 
@@ -347,44 +363,44 @@ Hər kart aşağıdakı vizual komponentlərdən ibarətdir:
 
 <br/>
 
-## 🚨 Alert Sistemi
+## 🚨 Alert System
 
-### 🎯 Severity Threshold-ları
+### 🎯 Severity Thresholds
 
-Alert sistemi `AlertSeverityHelper` vasitəsilə mərkəzləşdirilmiş threshold-larla işləyir. Settings-dən CPU threshold dəyişdirildikdə bütün sistem dərhal yeni dəyərlə işləməyə başlayır.
+Alert thresholds are centralized in `AlertSeverityHelper` and linked to the user-adjustable CPU threshold in Settings. Changing the slider immediately propagates the new value across the entire alert system — no restart required.
 
 <br/>
 
 <div align="center">
 
-| 🚦 Severity | 🖥️ CPU Threshold | 💾 Memory Threshold | 🎨 Rəng |
+| 🚦 Severity | 🖥️ CPU Condition | 💾 Memory Condition | 🎨 Visual |
 |:---|:---:|:---:|:---:|
-| 🔴 Critical | ≥ 20% | ≥ 80% | Qırmızı glow |
-| 🟠 High | ≥ 12% | ≥ 60% | Narıncı glow |
-| 🟡 Medium | < 12% | < 60% | Sarı glow |
+| 🔴 Critical | ≥ configured high threshold | ≥ 80% | Red glow |
+| 🟠 High | ≥ configured medium threshold | ≥ 60% | Orange glow |
+| 🟡 Medium | Below high threshold | Below 60% | Yellow glow |
 
 </div>
 
 <br/>
 
-### 🃏 ProAlertRow — Alert Kart Anatomiyası
+### 🃏 ProAlertRow — Alert Card Anatomy
 
-Hər alert kartı 8 ayrı subcomponent-dən ibarətdir. Bu komponent-ağacı kartın hər hissəsini izolə edir, yenidən istifadəni asanlaşdırır:
+Every alert is rendered as a `ProAlertRow`, composed of 8 isolated sub-components. This decomposition keeps each visual element independently testable and reusable:
 
 <br/>
 
 <div align="center">
 
-| 🧩 Komponent | 📋 Vəzifəsi |
+| 🧩 Component | 📋 Responsibility |
 |:---|:---|
-| 🫧 `ProAlertRowCardBackground` | Glassmorphism kart fonu |
-| ✨ `ProAlertRowGlow` | Severity rənginə uyğun parlama effekti |
-| 📏 `ProAlertRowLeftBar` | Sol tərəf rəngli sərhəd xətti |
-| 🖼️ `ProAlertRowIcon` | Konteyner tipi ikonu |
-| 📛 `ProAlertRowHeader` | Konteyner adı + SeverityPill badge |
-| 💬 `ProAlertRowMessage` | Xəbərdarlıq mətni |
-| 💊 `ProAlertRowMetricPill` | CPU% + MEM% dəyərləri |
-| 🕐 `ProAlertRowTime` | "2 dəq əvvəl" formatında vaxt |
+| 🫧 `ProAlertRowCardBackground` | Glassmorphism card surface |
+| ✨ `ProAlertRowGlow` | Ambient glow matching the severity color |
+| 📏 `ProAlertRowLeftBar` | Colored severity indicator bar on the left edge |
+| 🖼️ `ProAlertRowIcon` | Container type icon |
+| 📛 `ProAlertRowHeader` | Container name + SeverityPill badge |
+| 💬 `ProAlertRowMessage` | Human-readable alert description |
+| 💊 `ProAlertRowMetricPill` | CPU% and Memory% values at time of alert |
+| 🕐 `ProAlertRowTime` | Relative timestamp ("2 minutes ago") |
 
 </div>
 
@@ -396,56 +412,56 @@ Hər alert kartı 8 ayrı subcomponent-dən ibarətdir. Bu komponent-ağacı kar
 
 ## 📜 Live Logs
 
-### 🖥️ Terminal Komponentləri
+### 🖥️ Terminal Components
 
-Logs ekranı, real bir terminal-ın görünüşünü tam olaraq təkrarlayır. Hər vizual element ayrıca komponent kimi yazılmışdır:
+The Logs screen replicates the look and feel of a real terminal session. Every visual element is an independent SwiftUI component:
 
 <br/>
 
 <div align="center">
 
-| 🧩 Komponent | 📋 Vəzifəsi |
+| 🧩 Component | 📋 Responsibility |
 |:---|:---|
-| ⌨️ `BlinkingCursor` | Sol üstdə yanıb-sönən terminal kursoru |
-| 🔢 `TerminalLineNumber` | Sıra nömrəsi (solda sabit) |
-| 🕐 `TerminalTimestamp` | Nanosaniyə dəqiqliyində tarix/saat |
-| 🏷️ `LogLevelBadge` | DEBUG / INFO / WARN / ERROR badge |
-| 📝 `TerminalMessageText` | Log səviyyəsinə görə rəngli mətn |
-| ✨ `LogFlashOverlay` | Yeni log sətri üçün qısa parıltı animasiyası |
-| ➖ `TerminalSeparator` | Sətirlərarası incə xətt |
-| 📊 `LineCountPill` | Cari buffer-dəki log sayı |
-| 🟢 `StreamStatusBadge` | Bağlı / Bağlanır / Xəta badge-i |
+| ⌨️ `BlinkingCursor` | Animated blinking cursor in the top-left corner |
+| 🔢 `TerminalLineNumber` | Fixed left-column line numbers |
+| 🕐 `TerminalTimestamp` | Nanosecond-precision date and time |
+| 🏷️ `LogLevelBadge` | DEBUG / INFO / WARN / ERROR colored badge |
+| 📝 `TerminalMessageText` | Level-colored log message text |
+| ✨ `LogFlashOverlay` | Brief highlight flash on each new incoming line |
+| ➖ `TerminalSeparator` | Thin divider between log lines |
+| 📊 `LineCountPill` | Current line count in the buffer |
+| 🟢 `StreamStatusBadge` | Connected / Connecting / Error indicator |
 
 </div>
 
 <br/>
 
-### 📊 Stream Parametrləri
+### 📊 Stream Parameters
 
 <div align="center">
 
-| ⚙️ Parametr | 📊 Dəyər | 💡 Səbəb |
+| ⚙️ Parameter | 📊 Value | 💡 Rationale |
 |:---|:---:|:---|
-| 🗂️ Max buffer | 1500 sətir | Performans + RAM balansı |
-| 🔁 Max reconnect | 6 cəhd | Sonsuz döngünün qarşısı |
-| ⏱️ Retry strategiyası | Exponential backoff | Serveri yükləməmək üçün |
-| 🕐 Timestamp dəqiqliyi | Nanosaniyə (9 rəqəm) | Docker log formatına tam uyğun |
-| 💡 Re-flash | Scroll-da yoxdur | Köhnə loglar yenidən yanmır |
+| 🗂️ Max buffer size | 1,500 lines | Balances performance with sufficient history |
+| 🔁 Max reconnect attempts | 6 | Prevents infinite retry loops |
+| ⏱️ Retry strategy | Exponential backoff | Avoids overwhelming a recovering server |
+| 🕐 Timestamp precision | Nanoseconds (9 digits) | Full compatibility with Docker log format |
+| 💡 Re-flash on scroll | Disabled | Previously seen lines do not re-animate |
 
 </div>
 
 <br/>
 
-### 🔵 Log Level Sistemi
+### 🔵 Log Level System
 
 <div align="center">
 
-| 🏷️ Səviyyə | 🎨 Rəng | 📋 İstifadə |
+| 🏷️ Level | 🎨 Color | 📋 Usage |
 |:---:|:---:|:---|
-| 🔵 DEBUG | Mavi | Development, izləmə məlumatları |
-| ⚪ INFO | Ağ | Normal əməliyyat hadisələri |
-| 🟡 WARN | Sarı | Diqqət tələb edən vəziyyətlər |
-| 🔴 ERROR | Qırmızı | Xətalar, uğursuz əməliyyatlar |
+| 🔵 DEBUG | Blue | Development tracing and diagnostic information |
+| ⚪ INFO | White | Normal operational events |
+| 🟡 WARN | Yellow | Conditions that deserve attention |
+| 🔴 ERROR | Red | Failures and unexpected errors |
 
 </div>
 
@@ -459,25 +475,25 @@ Logs ekranı, real bir terminal-ın görünüşünü tam olaraq təkrarlayır. H
 
 ### 🎚️ CPU Threshold Slider
 
-Settings-in ən güclü xüsusiyyəti — CPU threshold slider. 1%-dən 99%-ə qədər sürüşdürdükdə əvvəlcə UserDefaults-a avtomatik saxlanır, sonra `AlertSeverityHelper`-in qlobal threshold dəyəri dərhal yenilənir. Yəni siz slider-i hərəkət etdirərkən tətbiqin alert sistemi real vaxtda yeni dəyərlə işləməyə başlayır — restart lazım deyil, heç bir əlavə addım lazım deyil.
+The CPU threshold slider is one of Lumen's most powerful features. Dragging it from 1% to 99% does two things simultaneously: it persists the value to `UserDefaults` and immediately updates the global threshold inside `AlertSeverityHelper`. The entire alert system adapts in real time — no restart, no confirmation, zero friction.
 
 <br/>
 
-### 🖥️ Server Konfiqurasiyası
+### 🖥️ Server Configuration
 
-ServerSetupSheet-i açıb host URL daxil etdikdə animasiyalı **FlowConnectorView** bağlantı axını vizual olaraq göstərir — sanki bir node-dan digərinə data axır. **ConnectionStatusCapsule** bağlantının uğurlu olub-olmadığını rəngli badge ilə anında bildirir. **PrettyHostFormatter** daxil etdiyiniz URL-i oxunaqlı formata çevirir.
-
-<br/>
-
-### 🔔 Bildiriş Tənzimləmələri
-
-Notifications toggle, **AlertFlowCardView**-da CPU threshold slider ilə birlikdə yerləşir. Bu iki ayar bir arada olduğundan istifadəçi hansı threshold-da necə xəbərdarlıq alacağını eyni anda görə bilir. AlertEmailCardView isə Firebase-dəki verified email-i göstərir — alertlərin hara göndərildiyini təsdiqləyir.
+Opening the Server Setup sheet reveals an animated `FlowConnectorView` that visually represents the data flow from your phone to the Docker host. The `ConnectionStatusCapsule` displays a color-coded badge the moment the connection test completes. `PrettyHostFormatter` sanitizes and formats the entered URL into a clean, readable string.
 
 <br/>
 
-### 💾 Auto-Save Mexanizmi
+### 🔔 Notifications
 
-Settings-də hər dəyişiklik 800ms debounce ilə avtomatik saxlanır. İstifadəçi slider-i sürüşdürdükcə hər mövqedə save edilmir — yalnız 800ms hərəkətsizlikdən sonra. Bu həm batareya, həm də I/O performansı baxımından optimal yanaşmadır. `deinit`-də `autoSaveTask` cancel edilir — memory leak yoxdur.
+The Notifications card and CPU threshold slider are intentionally placed together inside `AlertFlowCardView`. This layout lets users see at a glance exactly which threshold triggers notifications and adjust both settings in the same interaction.
+
+<br/>
+
+### 💾 Auto-Save
+
+Every change in Settings is debounced by 800 milliseconds before writing to disk. Rapidly dragging the slider does not trigger a save on every frame — only after the user pauses. The `autoSaveTask` is cancelled in `deinit`, guaranteeing no memory leaks or orphaned background writes.
 
 <br/>
 
@@ -487,66 +503,66 @@ Settings-də hər dəyişiklik 800ms debounce ilə avtomatik saxlanır. İstifad
 
 ## 🔌 Network Layer
 
-### 🌐 REST API Endpoint-ləri
+### 🌐 REST API Endpoints
 
 <div align="center">
 
-| 🔧 Method | 🔗 Endpoint | 📋 Təsvir |
+| 🔧 Method | 🔗 Endpoint | 📋 Description |
 |:---:|:---|:---|
-| 🟢 `GET` | `/containers` | Bütün konteynerlərin tam siyahısı |
-| 🟢 `GET` | `/containers/:id` | Tək konteyner detalları (env, ports, mounts) |
-| 🟡 `POST` | `/containers/:id/start` | Konteyneri işə salır |
-| 🟡 `POST` | `/containers/:id/stop` | Konteyneri dayandırır |
-| 🟡 `POST` | `/containers/:id/restart` | Konteyneri yenidən başladır |
-| 🔴 `DELETE` | `/containers/:id` | Konteyneri tamamilə silir |
-| 🟢 `GET` | `/images` | Bütün Docker image-lər |
-| 🟢 `GET` | `/volumes` | Bütün Docker volume-lar |
-| 🟢 `GET` | `/networks` | Bütün Docker network-lər |
-| 🟢 `GET` | `/alerts` | Bütün xəbərdarlıq tarixi |
-| 🔴 `DELETE` | `/alerts` | Bütün xəbərdarlıqları silir |
+| 🟢 `GET` | `/containers` | Full list of all containers |
+| 🟢 `GET` | `/containers/:id` | Single container detail (env, ports, mounts) |
+| 🟡 `POST` | `/containers/:id/start` | Start a stopped container |
+| 🟡 `POST` | `/containers/:id/stop` | Stop a running container |
+| 🟡 `POST` | `/containers/:id/restart` | Restart a container |
+| 🔴 `DELETE` | `/containers/:id` | Permanently remove a container |
+| 🟢 `GET` | `/images` | All Docker images |
+| 🟢 `GET` | `/volumes` | All Docker volumes |
+| 🟢 `GET` | `/networks` | All Docker networks |
+| 🟢 `GET` | `/alerts` | Complete alert history |
+| 🔴 `DELETE` | `/alerts` | Clear all alert history |
 
 </div>
 
 <br/>
 
-### 📡 WebSocket Stats — Gələn Sahələr
+### 📡 WebSocket Stats Payload
 
-`ws://{host}/stats?containerId={id}` endpoint-indən hər ~1 saniyədə bir JSON gəlir:
+A JSON message arrives from `ws://{host}/stats?containerId={id}` approximately once per second:
 
 <br/>
 
 <div align="center">
 
-| 📦 Sahə | 🔢 Tip | 📋 Məna | ⚠️ Qeyd |
+| 📦 Field | 🔢 Type | 📋 Description | ⚠️ Note |
 |:---|:---:|:---|:---|
-| `cpuUsage` | Double | CPU faizi | **22.58 = 22.58%** — fraction deyil! |
-| `memoryUsage` | Int | İstifadə olunan RAM | Bytes formatında |
-| `memoryLimit` | Int | Maksimum RAM | Bytes (≈ 3917 MB) |
-| `memoryPercent` | Double | Memory faizi | 0.0 – 100.0 aralığı |
-| `networkRx` | Int | Alınan məlumat | Bytes |
-| `networkTx` | Int | Göndərilən məlumat | Bytes |
+| `cpuUsage` | Double | CPU percentage | **22.58 means 22.58%** — not a fraction |
+| `memoryUsage` | Int | Memory in use | Bytes |
+| `memoryLimit` | Int | Memory ceiling | Bytes |
+| `memoryPercent` | Double | Memory percentage | 0.0 – 100.0 |
+| `networkRx` | Int | Bytes received | — |
+| `networkTx` | Int | Bytes transmitted | — |
 
 </div>
 
 <br/>
 
-> ⚠️ **Mühüm Qeyd:** `cpuUsage` həmişə faiz formatındadır. `normalizeToPercent()` funksiyası yalnız `clamp(0, 100)` əməliyyatı edir — heç bir çarpma yoxdur. Bunu `×100` etmək `22.58%`-i `2258%`-ə çevirərdi.
+> ⚠️ **Important:** `cpuUsage` is always in percentage format. `normalizeToPercent()` only applies `clamp(0, 100)` — there is no multiplication. Multiplying by 100 would turn `22.58%` into `2258%`.
 
 <br/>
 
-### 🔌 WebSocket Stack Komponentləri
+### 🔌 WebSocket Stack Components
 
 <div align="center">
 
-| 🧩 Komponent | 📋 Vəzifəsi |
+| 🧩 Component | 📋 Responsibility |
 |:---|:---|
-| 🔗 `DefaultWebSocketClient` | `URLSessionWebSocketTask` üzərindəki native wrapper |
+| 🔗 `DefaultWebSocketClient` | Native wrapper around `URLSessionWebSocketTask` |
 | 🔁 `WebSocketBackoff` | Exponential retry: 1s → 2s → 4s → 8s → max 30s |
-| 💾 `StatsCache` | Son gələn stats-ı `CachedStatsEnvelope`-da saxlayır |
-| 🕐 `DateParser` | Docker-in nanosaniyə timestamp-ini parse edir |
-| 📡 `StatsStreamViewModel` | 350ms başlama gecikmə (detail animation tamamlansın) |
-| 🗺️ `WSRoute` | WebSocket URL-lərini mərkəzləşdirir |
-| 📊 `WebSocketState` | connecting / connected / disconnected / error |
+| 💾 `StatsCache` | Caches the most recent stats in `CachedStatsEnvelope` |
+| 🕐 `DateParser` | Trims 9-digit nanosecond timestamps to standard ISO 8601 |
+| 📡 `StatsStreamViewModel` | 350ms startup delay so the detail view animation completes first |
+| 🗺️ `WSRoute` | Centralizes all WebSocket URL construction |
+| 📊 `WebSocketState` | Enum: connecting / connected / disconnected / error |
 
 </div>
 
@@ -558,52 +574,50 @@ Settings-də hər dəyişiklik 800ms debounce ilə avtomatik saxlanır. İstifad
 
 ## 🧪 Mock Backend
 
-`DEBUG` build-da şəbəkəsiz tam simulasiya mühiti. Server olmadan simulator-da birbaşa işlədilir. Hər şey real backend formatına tam uyğundur.
+Lumen ships with a complete simulation environment that activates automatically in `DEBUG` builds. No server, no configuration, no network required. Everything mirrors the exact format of the real backend.
 
 <br/>
 
 ### 🌊 Sin-Wave + Spike Engine
 
-MockStatsHub hər konteyner üçün unikal profil daşıyır. CPU dəyəri sinusoid dalğa ilə dəyişir, üstünə random noise əlavə olunur, müəyyən ehtimalla spike baş verir:
+`MockStatsHub` assigns every container a unique behavioral profile. CPU values oscillate on a sine wave with added random noise. Occasionally, a spike multiplier kicks in to simulate a sudden load surge:
 
-**CPU = baseCPU + amplitude × sin(phase) + noise + (spike varsa: baseCPU × spikeMult)**
+**CPU = baseCPU + amplitude × sin(phase) + noise + (if spike: baseCPU × spikeMult)**
 
-Bu formulanın nəticəsi `clamp(0.1, 99.9)` aralığında tutulur — real backend formatına tam uyğun faiz dəyəri.
+The result is clamped to a valid percentage range, producing realistic, continuously varying metrics that exercise every part of the UI.
 
 <br/>
 
-### 🐳 18 Konteyner Profili
+### 🧪 Container Behavior Categories
 
 <div align="center">
 
-| 🐳 Konteyner | 📊 Normal CPU | ⚡ Spike CPU | 🎲 Spike ehtimalı | 🚦 Severity |
-|:---|:---:|:---:|:---:|:---:|
-| `log-cpu-heavy` | 18 – 26% | — | 0% | 🔴 Həmişə Critical |
-| `lumen-app` | ~3% | ~21% | 5% / saniyə | 🔴 Spike-da Critical |
-| `lumen-postgres` | ~5.5% | ~14% | 5% / saniyə | 🟠 Spike-da High |
-| `log-mongodb` | ~2.2% | ~13% | 6% / saniyə | 🟠 Spike-da High |
-| `log-analytics` | ~2.5% | ~13% | 6% / saniyə | 🟠 Spike-da High |
-| `log-search-service` | ~2% | ~13% | 6% / saniyə | 🟠 Spike-da High |
-| `lumen-minio` | ~5% | — | 0% | 🟢 Normal |
-| `log-redis-cache` | ~2.2% | — | 0% | 🟢 Normal |
-| `log-nginx-web` | ~1.8% | — | 0% | 🟢 Normal |
-| `log-auth-service` | ~2% | — | 0% | 🟢 Normal |
-| `log-notification-service` | ~1.8% | — | 0% | 🟢 Normal |
-| `log-worker-jobs` | ~2.2% | — | 0% | 🟢 Normal |
-| `log-queue-processor` | ~2% | — | 0% | 🟢 Normal |
-| `log-api-gateway` | ~2.5% | — | 0% | 🟢 Normal |
-| `log-payment-service` | ~2% | — | 0% | 🟢 Normal |
-| `log-cleaner` | ~1.6% | ~6.4% | 5% / saniyə | 🟢 Spike kiçikdir |
-| `log-memory-heavy` | ~2.8% | ~8.4% | 3% / saniyə | 🟢 Memory yüksəkdir |
-| `lumen-caddy` | ~1.5% | — | 0% | 🟢 Normal |
+| 🏷️ Category | 📊 CPU Behavior | ⚡ Spike Behavior | 🚦 Severity Impact |
+|:---|:---|:---|:---:|
+| 🔴 **Always Critical** | Persistently high CPU | No spikes needed | Critical at all times |
+| 🟠 **Spike to High** | Normal CPU baseline | Occasional spikes push above high threshold | High during spikes |
+| 🟠 **Spike to Critical** | Low CPU baseline | Rare, intense spikes breach critical threshold | Critical during spikes |
+| 🟢 **Always Normal** | Low, stable CPU | No spikes | Healthy at all times |
+| 💾 **Memory Heavy** | Low CPU, high RAM | Occasional memory spikes | Warning on memory |
 
 </div>
 
 <br/>
 
-### 🎭 Normal Vəziyyətdə Health Score Simulasiyası
+### 🔁 Environment Switch
 
-Mock mühitdə 18 konteyner işləyir. `log-cpu-heavy` həmişə 22% CPU göstərir — bu `cpuCritical` penalty (−15) yaradır. 2 kritik alert var — `alertPenalty` (−10). Digər konteynerlar 1.6–5.5% CPU aralığında — yalnız `cpuLow` (−2). Nəticə: target ≈ **73** → 🟢 **Healthy**.
+The switch between real and mock services is handled by a single compile-time flag. No code change is required — just build for `DEBUG` or `Release`:
+
+<br/>
+
+<div align="center">
+
+| 🏗️ Build Configuration | 🔧 LumenService | 📡 StatsStreaming |
+|:---:|:---:|:---:|
+| 🧪 DEBUG | `MockLumenService` | `MockStatsHub` |
+| 🚀 Release | `RealLumenService` | `RealStatsHub` |
+
+</div>
 
 <br/>
 
@@ -613,7 +627,7 @@ Mock mühitdə 18 konteyner işləyir. `log-cpu-heavy` həmişə 22% CPU göstə
 
 ## 🎨 Design System
 
-Bütün vizual sabitlər `DS` namespace altında mərkəzləşdirilmişdir. Heç bir magic number yoxdur — hər padding, hər radius, hər animasiya müddəti bir yerdən idarə olunur.
+Every visual constant in Lumen lives inside the `DS` namespace. There are no magic numbers scattered across the codebase — every padding, radius, color, and animation duration is defined once and referenced everywhere.
 
 <br/>
 
@@ -623,25 +637,25 @@ Bütün vizual sabitlər `DS` namespace altında mərkəzləşdirilmişdir. Heç
 <tr>
 <td width="50%" valign="top">
 
-**🎨 Rənglər**
+**🎨 Colors**
 
-| Token | Məna |
+| Token | Role |
 |---|---|
-| `DS.Color.accent` | Əsas mavi |
-| `DS.Color.danger` | Kritik qırmızı |
-| `DS.Color.warning` | Amber/narıncı |
-| `DS.Color.success` | Yaşıl |
-| `DS.Color.bg0 – bg4` | Fon ierarxiyası (5 qat) |
-| `DS.Color.textPrimary` | Əsas mətn |
-| `DS.Color.textSecondary` | İkincil mətn |
-| `DS.Color.textMuted` | Solğun mətn |
+| `DS.Color.accent` | Primary blue — interactive elements |
+| `DS.Color.danger` | Critical red — errors and alerts |
+| `DS.Color.warning` | Amber — warnings and caution |
+| `DS.Color.success` | Green — healthy states |
+| `DS.Color.bg0 – bg4` | Layered background hierarchy |
+| `DS.Color.textPrimary` | Main readable text |
+| `DS.Color.textSecondary` | Supporting text |
+| `DS.Color.textMuted` | Dimmed, de-emphasized text |
 
 </td>
 <td width="50%" valign="top">
 
-**⚙️ Layout & Animasiya**
+**⚙️ Spacing, Radius & Animation**
 
-| Token | Dəyər |
+| Token | Value |
 |---|---|
 | `DS.Space.xs` | 4 pt |
 | `DS.Space.sm` | 8 pt |
@@ -649,9 +663,9 @@ Bütün vizual sabitlər `DS` namespace altında mərkəzləşdirilmişdir. Heç
 | `DS.Space.lg` | 16 pt |
 | `DS.Space.xl` | 24 pt |
 | `DS.Space.xxl` | 32 pt |
-| `DS.Anim.fast` | easeOut 0.15s |
-| `DS.Anim.smooth` | easeInOut 0.35s |
-| `DS.Anim.spring` | response 0.4, damping 0.75 |
+| `DS.Anim.fast` | easeOut · 0.15s |
+| `DS.Anim.smooth` | easeInOut · 0.35s |
+| `DS.Anim.spring` | response 0.4 · damping 0.75 |
 
 </td>
 </tr>
@@ -661,7 +675,7 @@ Bütün vizual sabitlər `DS` namespace altında mərkəzləşdirilmişdir. Heç
 
 <br/>
 
-### 🧩 Reusable Komponent Kitabxanası
+### 🧩 Reusable Component Library
 
 `GlassCard` · `NeonBadge` · `ProStatCard` · `ProCountCard` · `MiniSparkline` · `HealthScoreRing` · `LumenProgressBar` · `CircularProgress` · `SkeletonRect` · `PulseDot` · `BlinkingCursor` · `SummaryBanner` · `SummaryChip` · `StatusPill` · `SectionHeader` · `DividerLine` · `CenteredEmpty` · `CenteredLoader`
 
@@ -671,7 +685,7 @@ Bütün vizual sabitlər `DS` namespace altında mərkəzləşdirilmişdir. Heç
 
 <br/>
 
-## 📁 Layihə Strukturu
+## 📁 Project Structure
 
 <div align="center">
 
@@ -680,7 +694,7 @@ Final Project/
 │
 ├── 📂 Screens/
 │   │
-│   ├── 📂 Dashboard/                        🖥️  40+ fayl
+│   ├── 📂 Dashboard/                        🖥️  40+ files
 │   │   ├── 📂 Core/         DashboardViewModel · DashboardCoordinator
 │   │   │                    DashboardConstants · DashboardAggregates · DashboardChartBuilder
 │   │   ├── 📂 Views/        DashboardView · DashMainContentView · DashLoadingView
@@ -694,7 +708,7 @@ Final Project/
 │   │   └── 📂 Models/       ContainerStatsHistory · GlobalStatPoint
 │   │                        ChartMetrics · TopContributorItem
 │   │
-│   ├── 📂 Containers/                       🐳  35+ fayl
+│   ├── 📂 Containers/                       🐳  35+ files
 │   │   ├── 📂 Images+Network+Volume/
 │   │   │                    ImagesListView · NetworksListView · VolumesListView
 │   │   │                    SummaryBanner · SummaryChip · PremiumCardList
@@ -711,7 +725,7 @@ Final Project/
 │   │                        ContainersTabView · ContainersTabViewModel
 │   │                        ContainerStateBadge · ContainersLiveBadge
 │   │
-│   ├── 📂 Alerts/                           🚨  20+ fayl
+│   ├── 📂 Alerts/                           🚨  20+ files
 │   │   ├── 📂 ReusableComponents/
 │   │   │                    AlertSeverity · AlertFilterType · AlertEvents
 │   │   │                    AlertTimeFormatter
@@ -720,25 +734,22 @@ Final Project/
 │   │   │                    ProAlertRowMetricPill · ProAlertRowMessage
 │   │   │                    ProAlertRowTime · ProAlertRowIcon · ProAlertRowLeftBar
 │   │   │                    SeverityPill · AlertsSearchBar · AlertsFilterRow
-│   │   │                    AlertsListView · AlertsHeaderView · AlertsStatusPill
 │   │   └── 📂 (root)        AlertsView · AlertViewModel · AlertViewController
 │   │
-│   ├── 📂 Logs/                             📜  20+ fayl
-│   │   ├── Terminal/        TerminalOutputView · TerminalLogLine · TerminalTimestamp
-│   │   │                    TerminalMessageText · LogFlashOverlay · TerminalSeparator
-│   │   │                    TerminalRowBackground · BlinkingCursor
-│   │   ├── Controls/        ContainerPickerView · LogLevelFilterRow · LogLevelChip
-│   │   │                    LineCountPill · StreamStatusBadge · LogsToolbarRow
+│   ├── 📂 Logs/                             📜  20+ files
+│   │   ├── 📂 Terminal/     TerminalOutputView · TerminalLogLine · TerminalTimestamp
+│   │   │                    TerminalMessageText · LogFlashOverlay · BlinkingCursor
+│   │   ├── 📂 Controls/     ContainerPickerView · LogLevelFilterRow · StreamStatusBadge
+│   │   │                    LineCountPill · LogsToolbarRow
 │   │   └── 📂 (root)        LogsView · LogsViewModel · LogsStreamLogic
 │   │                        LogsFilterLogic · LogsContainerLogic · LogsState
 │   │
-│   └── 📂 Settings/                         ⚙️  25+ fayl
-│       ├── Cards/           ServerCardView · NotificationsCardView
+│   └── 📂 Settings/                         ⚙️  25+ files
+│       ├── 📂 Cards/        ServerCardView · NotificationsCardView
 │       │                    AlertFlowCardView · AlertEmailCardView
-│       │                    SignOutCardView · AppInfoCardView · GlowCardView
-│       ├── Server/          ServerSetupSheetView · FlowConnectorView
-│       │                    FlowNodeView · ConnectionStatusCapsule
-│       │                    PrettyHostFormatter · ServerRowView
+│       │                    SignOutCardView · AppInfoCardView
+│       ├── 📂 Server/       ServerSetupSheetView · FlowConnectorView
+│       │                    ConnectionStatusCapsule · PrettyHostFormatter
 │       └── 📂 (root)        SettingsView · SettingsViewModel · SettingsViewController
 │                            SettingsHeroHeaderView · SettingsBackgroundView
 │
@@ -756,7 +767,7 @@ Final Project/
 ├── 📂 MainTabBar/           MainTabBarController
 │
 └── 📂 DesignSystem/         DS+Color · DS+Font · DS+Space · DS+Radius · DS+Anim
-                             AppEnvironment  ← Mock ↔ Real switch #if DEBUG
+                             AppEnvironment  ←  #if DEBUG / Release switch
 ```
 
 </div>
@@ -767,24 +778,24 @@ Final Project/
 
 <br/>
 
-## 🚀 Quraşdırma
+## 🚀 Installation
 
-### 📋 Tələblər
+### 📋 Requirements
 
 <div align="center">
 
-| 🛠️ Alət | ✅ Minimum Versiya |
+| 🛠️ Tool | ✅ Minimum Version |
 |:---:|:---:|
 | 🍎 Xcode | 15.0+ |
-| 📱 iOS | 17.0+ |
+| 📱 iOS Deployment Target | 17.0+ |
 | 🦅 Swift | 5.9+ |
-| 📦 CocoaPods | Aktual |
+| 📦 CocoaPods | Latest |
 
 </div>
 
 <br/>
 
-### ⚡ Sürətli Başlanğıc
+### ⚡ Quick Start
 
 ```bash
 git clone https://github.com/username/lumen-ios.git
@@ -793,19 +804,19 @@ pod install
 open "Final Project.xcworkspace"
 ```
 
-`GoogleService-Info.plist` faylını `Final Project/` qovluğuna əlavə edin, sonra **⌘R** ilə build edin.
+Add your `GoogleService-Info.plist` to the `Final Project/` directory, then press **⌘R** to build and run.
 
 <br/>
 
-### 🧪 Mock Mode — Şəbəkəsiz Test
+### 🧪 Running Without a Server
 
-`DEBUG` build-da heç bir konfiqurasiya lazım deyil. Simulator-da birbaşa çalışdırın — MockStatsHub, MockLumenService, MockLogsHub avtomatik aktiv olur. Bütün 18 konteyner profili, spike-lar, alertlər, loglar — hamısı işləyir.
+`DEBUG` builds activate the full mock environment automatically. No configuration, no network, no Docker host required. Simply run the app in the simulator and everything — container streams, alerts, logs, health scoring — works out of the box.
 
 <br/>
 
-### 🌐 Real Backend ilə
+### 🌐 Connecting to a Real Docker Host
 
-Settings → Server Card → Host URL daxil edin. Əsas test serveri: `159.223.192.61:8324`. Connection test düyməsinə basın, yaşıl status görünsə hazırsınız.
+Open **Settings → Server** and enter your host URL. Tap the connection test button. A green status capsule confirms a successful connection. WebSocket streams open automatically for every discovered container.
 
 <br/>
 
@@ -817,17 +828,17 @@ Settings → Server Card → Host URL daxil edin. Əsas test serveri: `159.223.1
 
 <div align="center">
 
-| ⚙️ Texnologiya | 🔢 Versiya | 📋 İstifadə |
-|:---|:---:|:---|
-| 🦅 **Swift** | 5.9 | Əsas proqramlaşdırma dili |
-| 🎨 **SwiftUI** | 5.0 | Bütün UI komponentlər — third-party UI yoxdur |
-| 📱 **UIKit** | — | Tab navigation (UIHostingController ilə embedding) |
-| ⚡ **Swift Concurrency** | — | async/await · AsyncThrowingStream · Task |
-| 🔌 **URLSessionWebSocketTask** | — | Native WebSocket — third-party WebSocket yoxdur |
-| 🔐 **Firebase Auth** | 10.x | İstifadəçi autentifikasiyası |
-| 🔗 **Combine** | — | Settings auto-save 800ms debounce |
-| 💾 **UserDefaults** | — | CPU threshold · notification preference |
-| 📢 **NotificationCenter** | — | Container refresh cross-view signal |
+| ⚙️ Technology | 📋 Role |
+|:---|:---|
+| 🦅 **Swift 5.9** | Primary language |
+| 🎨 **SwiftUI 5.0** | All UI components — zero third-party UI frameworks |
+| 📱 **UIKit** | Tab navigation via `UIHostingController` embedding |
+| ⚡ **Swift Concurrency** | `async/await` · `AsyncThrowingStream` · `Task` |
+| 🔌 **URLSessionWebSocketTask** | Native WebSocket — no third-party WebSocket library |
+| 🔐 **Firebase Auth** | User authentication and email verification |
+| 🔗 **Combine** | 800ms auto-save debounce in Settings |
+| 💾 **UserDefaults** | CPU threshold and notification preference persistence |
+| 📢 **NotificationCenter** | Cross-view container refresh signaling |
 
 </div>
 
@@ -837,21 +848,20 @@ Settings → Server Card → Host URL daxil edin. Əsas test serveri: `159.223.1
 
 <br/>
 
-## 📊 Performance Göstəriciləri
+## 📊 Performance
 
 <div align="center">
 
-| 📈 Göstərici | ⚡ Dəyər | 💡 Qeyd |
+| 📈 Metric | ⚡ Value | 💡 Notes |
 |:---|:---:|:---|
-| 🔌 WebSocket stream interval | ~1 saniyə | Hər konteyner üçün ayrı stream |
-| 📊 Chart history buffer | 40 nöqtə | ≈ 1.5 dəqiqəlik məlumat |
-| 🔢 Dashboard recalc | 2 saniyə | Exponential smoothing ilə |
-| 🚨 Alert refresh | 4 saniyə | Auto-refresh, istifadəçi müdaxiləsi yoxdur |
-| 🐳 Container sync | 15 saniyə | Yeni konteyner kəşfi |
-| 📜 Log buffer | 1500 sətir | Saatlarla log axını mümkündür |
-| 🔁 WS reconnect | 6 cəhd | 1s → 2s → 4s → 8s → max 30s |
-| ⏱️ StatsStream delay | 350ms | Detail view animasiyası tamamlansın deyə |
-| 💀 Skeleton loading | Anında | ContainerCardSkeleton + ContainersSkeletonList |
+| 🔌 WebSocket update interval | ~1 second | One dedicated stream per container |
+| 📊 Chart history buffer | 40 points | Approximately 1.5 minutes of live data |
+| 🔢 Dashboard recalculation | Every 2s | With exponential smoothing applied |
+| 🚨 Alert refresh interval | Every 4s | Fully automatic |
+| 🐳 Container sync interval | Every 15s | Detects new and removed containers |
+| 📜 Log buffer limit | 1,500 lines | Hours of streaming without degradation |
+| 🔁 WebSocket reconnect limit | 6 attempts | 1s → 2s → 4s → 8s → max 30s backoff |
+| ⏱️ StatsStream startup delay | 350ms | Waits for detail view animation to complete |
 
 </div>
 
@@ -861,21 +871,21 @@ Settings → Server Card → Host URL daxil edin. Əsas test serveri: `159.223.1
 
 <br/>
 
-## 💡 Əsas Dizayn Qərarları
+## 💡 Key Design Decisions
 
 <br/>
 
-**🔄 Stream Persistence** — Navigation boyunca WebSocket stream-lər canlı qalır. Container detail-dən geri qayıdanda kartlar anında CPU göstərir — heç bir "Connecting..." gecikmə yoxdur. Bu qərara gəlməzdən əvvəl hər `onDisappear`-də stream-lər öldürülürdü, geri qayıdanda 1–2 saniyə boş kart görünürdü. İndi `onDisappear` yalnız `loadTask`-ı cancel edir, stream-lərə toxunmur.
+**🔄 Stream Persistence across Navigation** — `onDisappear` does not kill WebSocket streams. Only the `loadTask` is cancelled. This means navigating into a container's detail view and returning shows live metrics instantly — no reconnection delay, no blank cards.
 
-**🔒 didLoadOnce / didStartOnce** — SwiftUI-nin `onAppear` hər tab keçidində, hər navigation push/pop-da tetiklənir. Bu flag-lər ilk yükləmədən sonra gereksiz şəbəkə requestlərinin qarşısını alır. Nəticə: daha az API call, daha sürətli UI.
+**🔒 didLoadOnce / didStartOnce** — SwiftUI's `onAppear` fires on every tab switch and every navigation push/pop. These flags ensure network requests only happen once per session, preventing redundant API calls and duplicate stream initialization.
 
-**🎯 Hysteresis** — 19.9% CPU-da score "critical" olub, 19.8%-ə düşəndə "healthy" olmasın deyə enter/exit threshold-ları ayrıldı. Bu olmadan health ring saniyədə dəfələrlə rəng dəyişərdi — pis UX.
+**🎯 Hysteresis** — Without enter/exit threshold separation, a container hovering near 20% CPU would cause the health ring to flash between green and red every two seconds. The buffer zones eliminate this entirely.
 
-**🧵 nonisolated deinit** — `DashboardCoordinator` class-level `@MainActor` daşımır. Hər metod ayrıca annotasiya alır. Bu qərar `deinit`-dən `cancelAllTasks()` çağırışını mümkün edir — əks halda Swift compiler runtime error verərdi.
+**🧵 nonisolated deinit** — `DashboardCoordinator` avoids class-level `@MainActor`. Every method carries its own actor annotation. This design allows `cancelAllTasks()` to be called safely from `deinit` — something the Swift compiler prohibits when the entire class is isolated to the main actor.
 
-**⚡ Optimistic Updates** — Container actions (start/stop/restart) server cavabını gözləmədən UI-ı dərhal yeniləyir. İstifadəçi sıfır gecikmə hiss edir. Server xəta qaytararsa rollback baş verir.
+**⚡ Optimistic Updates** — Container start/stop/restart operations update the UI before waiting for a server response. Users experience zero latency. A rollback mechanism handles the rare case where the server rejects the action.
 
-**📐 CPU Faiz Formatı** — Real backend `cpuUsage: 22.58` göndərir. Bu 22.58% CPU-dur — `0.2258` fraction deyil. `normalizeToPercent()` yalnız `clamp(0, 100)` edir. Bunu `×100` etmək `22.58%`-i `2258%`-ə çevirərdi — çox ciddi bir bug.
+**📐 Percentage Format Consistency** — The real backend sends `cpuUsage` as a percentage (e.g., `22.58` means 22.58%). `normalizeToPercent()` only clamps to `[0, 100]`. Multiplying by 100 would produce values like `2258%` — a subtle but critical bug that was fixed early in development.
 
 <br/>
 
@@ -885,13 +895,15 @@ Settings → Server Card → Host URL daxil edin. Əsas test serveri: `159.223.1
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:30D158,50:5E5CE6,100:0A84FF&height=150&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20in%20Baku%20%F0%9F%87%A6%F0%9F%87%BF&fontSize=24&fontColor=ffffff&fontAlignY=55" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:30D158,50:5E5CE6,100:0A84FF&height=160&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20in%20Baku%2C%20Azerbaijan%20%F0%9F%87%A6%F0%9F%87%BF&fontSize=22&fontColor=ffffff&fontAlignY=55" width="100%"/>
 
 <br/>
 
-**Lumen** — *Cibinizdəki data center.*
+**Lumen** — *Your entire data center, right in your pocket.*
 
-⭐ Layihəni bəyəndinizsə star vurun — bu çox motivasiya verir!
+<br/>
+
+⭐ If you find this project useful, please consider giving it a star — it means a lot!
 
 <br/>
 
@@ -900,6 +912,6 @@ Settings → Server Card → Host URL daxil edin. Əsas test serveri: `159.223.1
 
 <br/>
 
-*Swift · SwiftUI · Bakı, Azərbaycan 🇦🇿 · 2026*
+*Built with Swift · SwiftUI · Baku, Azerbaijan 🇦🇿 · 2026*
 
 </div>
