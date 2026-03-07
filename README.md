@@ -116,63 +116,6 @@ A full simulation environment for development and testing. Runs entirely without
 </tr>
 </table>
 
-<br/>
-
----
-
-<br/>
-
-## 🏗️ Architecture
-
-Lumen is built on **MVVM + Coordinator** pattern. A UIKit navigation layer embeds SwiftUI views via `UIHostingController`, combining the declarative power of SwiftUI with the navigation reliability of UIKit.
-
-<br/>
-
-<div align="center">
-
-```
-┌──────────────────────────────────────────────────────┐
-│              UIKit Navigation Layer                  │
-│           MainTabBarController                       │
-│   Dashboard · Containers · Alerts · Logs · Settings  │
-└────────────────────┬─────────────────────────────────┘
-                     │  UIHostingController
-┌────────────────────▼─────────────────────────────────┐
-│                SwiftUI Views                         │
-│                                                      │
-│  DashboardView ──── DashboardViewModel               │
-│        │                  │                          │
-│        │          DashboardCoordinator               │
-│        │          ├── snapshotTimer   (4s)           │
-│        │          ├── alertTimer      (20s)          │
-│        │          ├── containerTimer  (15s)          │
-│        │          └── streamTasks     (per WS)       │
-│        │                                             │
-│  ContainersView ─── ContainersViewModel              │
-│        └── ContainerCard × N  ← live metric strips  │
-│               └── ContainerDetailView               │
-│                      └── StatsStreamViewModel       │
-│                                                      │
-│  AlertsView · LogsView · SettingsView                │
-└────────────────────┬─────────────────────────────────┘
-                     │
-┌────────────────────▼─────────────────────────────────┐
-│                 Service Layer                        │
-│                                                      │
-│  LumenService (protocol)                             │
-│  ├── RealLumenService    →  REST API                 │
-│  └── MockLumenService    →  Simulated responses      │
-│                                                      │
-│  StatsStreaming (protocol)                           │
-│  ├── RealStatsHub        →  WebSocket streams        │
-│  └── MockStatsHub        →  Sin-wave + spike engine  │
-└──────────────────────────────────────────────────────┘
-```
-
-</div>
-
-<br/>
-
 ### 🧩 Core Architectural Decisions
 
 | 🔑 Pattern | 📍 Where | 💡 Why |
