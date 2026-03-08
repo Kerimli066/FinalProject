@@ -32,12 +32,12 @@ enum DashAlertSeverity {
     }
 
     static func fromStats(type: String, rawValue: Double) -> DashAlertSeverity {
-        let percent = rawValue <= 1.0 ? rawValue * 100.0 : rawValue
+        let percent = rawValue < 1.0 ? rawValue * 100.0 : rawValue
         return fromPercent(type: type, percent: percent)
     }
 
     static func fromAlert(type: String, value: Double) -> DashAlertSeverity {
-        let percent = value <= 1.0 ? value * 100.0 : value
+        let percent = value < 1.0 ? value * 100.0 : value
         return fromPercent(type: type, percent: percent)
     }
 

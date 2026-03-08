@@ -106,7 +106,6 @@ final class DashboardViewModel: ObservableObject {
         didStartOnce = true
     }
 
-
     private func startRecalcTimer() {
         recalcTimer?.cancel()
         recalcTimer = Task { [weak self] in
@@ -179,9 +178,15 @@ final class DashboardViewModel: ObservableObject {
     private func applyAlerts(_ alerts: [Alert]) {
         let sorted = alerts.sorted { $0.timestamp > $1.timestamp }
         recentAlerts = Array(sorted.prefix(5))
-        alertCriticalCount = alerts.filter {
+
+        // Only count critical alerts from the last 5 minutes
+        // to prevent health score from drifting downward as history grows
+        let recentWindow: TimeInterval = 300
+        let recentCritical = alerts.filter {
+            Date().timeIntervalSince($0.timestamp) < recentWindow &&
             AlertSeverityHelper.isCritical(type: $0.type, value: $0.value)
-        }.count
+        }
+        alertCriticalCount = recentCritical.count
         criticalCount = alertCriticalCount
         recalculateAggregates()
     }
@@ -198,12 +203,12 @@ final class DashboardViewModel: ObservableObject {
         }
 
         let now = Date()
-        if let last = perContainerHistory[containerId]?.lastAppendedAt,
-           now.timeIntervalSince(last) < DashboardConstants.historyAppendInterval {
-           
-        } else {
+        guard let last = perContainerHistory[containerId]?.lastAppendedAt,
+              now.timeIntervalSince(last) < DashboardConstants.historyAppendInterval else {
             perContainerHistory[containerId]?.append(stats)
+            return
         }
+        // throttled — too soon to append another point
     }
 
     private func takeGlobalSnapshot() {
@@ -297,4 +302,3 @@ final class DashboardViewModel: ObservableObject {
         DashboardChartBuilder.makeCPUContributionSeries(from: perContainerHistory)
     }
 }
-
