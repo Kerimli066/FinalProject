@@ -38,7 +38,8 @@ enum EmailValidator {
         guard domain.contains(".") else {
             return "Domain must include '.' — e.g. name@gmail.com"
         }
-
+        
+        
         let regex     = #"^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"#
         let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
         guard predicate.evaluate(with: email) else {
