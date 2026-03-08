@@ -26,9 +26,10 @@ final class OnboardingViewController: UIViewController {
     var didRunInitialEntrance = false
     var isAnimating = false
 
-    lazy var uiHelper            = OnboardingViewControllerUIHelper(owner: self)
-    lazy var entranceAnimator    = OnboardingEntranceAnimator(owner: self)
-    lazy var transitionAnimator  = OnboardingTransitionAnimator(owner: self)
+    lazy var uiHelper           = OnboardingViewControllerUIHelper(owner: self)
+    lazy var stepPresenter      = OnboardingStepPresenter(owner: self)
+    lazy var entranceAnimator   = OnboardingEntranceAnimator(owner: self)
+    lazy var transitionAnimator = OnboardingTransitionAnimator(owner: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,7 @@ final class OnboardingViewController: UIViewController {
         uiHelper.buildUI()
         bindVM()
 
-        uiHelper.applyStep(step: .monitor, animated: false)
+        stepPresenter.applyStep(step: .monitor, animated: false)
         entranceAnimator.prepareInitialEntranceState()
     }
 
@@ -68,11 +69,10 @@ final class OnboardingViewController: UIViewController {
         vm.onStepChanged = { [weak self] step in
             guard let self else { return }
 
-            if self.didRunInitialEntrance {
-                self.transitionAnimator.performTransition(to: step, tone: step.accentColor)
-            } else {
-                self.uiHelper.applyStep(step: step, animated: false)
-            }
+            self.stepPresenter.applyStep(
+                step: step,
+                animated: self.didRunInitialEntrance
+            )
         }
 
         vm.onFinish = { [weak self] in
@@ -81,15 +81,18 @@ final class OnboardingViewController: UIViewController {
     }
 
     @objc func tappedBack() {
-        guard let p = OnboardingStep(rawValue: vm.currentStep.rawValue - 1) else { return }
-        vm.goTo(p)
+        guard !isAnimating else { return }
+        guard let previous = OnboardingStep(rawValue: vm.currentStep.rawValue - 1) else { return }
+        vm.goTo(previous)
     }
 
     @objc func tappedSkip() {
+        guard !isAnimating else { return }
         vm.skip()
     }
 
     @objc func tappedAction() {
+        guard !isAnimating else { return }
         vm.handleAction()
     }
 

@@ -34,11 +34,14 @@ final class OnboardingStepPresenter {
 
     func applyStep(step: OnboardingStep, animated: Bool) {
         let tone = step.accentColor
+        let isFirstStep = step == .monitor
 
         owner.stepLabel.text = "STEP \(step.rawValue + 1) OF 3"
         owner.actionButton.setTitle(step == .alerts ? "Get Started" : "Next", for: .normal)
-        owner.backButton.alpha = step == .monitor ? 0 : 1
-        owner.backButton.isEnabled = step != .monitor
+
+        owner.backButton.isHidden = isFirstStep
+        owner.backButton.isEnabled = !isFirstStep
+        owner.backButton.alpha = isFirstStep ? 0 : 1
 
         if animated {
             owner.transitionAnimator.performTransition(to: step, tone: tone)
