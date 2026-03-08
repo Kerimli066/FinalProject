@@ -19,7 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         FirstLaunchResetHelper.resetIfNeeded()
-        print(" ATS =", Bundle.main.infoDictionary?["NSAppTransportSecurity"] ?? "nil")
+        
         return true
     }
 
